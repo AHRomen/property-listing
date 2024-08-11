@@ -1,0 +1,95 @@
+// Banner CSS
+.banner {
+    padding-top: 70px;
+}
+.banner-para {
+    max-width: 930px;
+    color: var(--color-7);
+    text-align: center;
+    margin: 30px auto;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.search-porperty {
+    max-width: 960px;
+    margin: 40px auto;
+    .filter{
+        background: var(--color-1);
+        padding: 20px 25px;
+        border-radius: 12px;
+    }
+    .filter-form {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 15px;
+    }
+}
+//Select Box Design
+
+.select2-container--default{
+    .select2-results__option--highlighted{
+        &.select2-results__option--selectable{
+            background: var(--color-15);
+        }
+    }    
+    .select2-results__option--selectable{
+        color: var(--color-11);
+    }
+}
+.select2 {
+    width: auto !important;
+   .select2-selection--single {
+        height: auto;
+        padding: 10px 14px;
+        border: 1px solid #EAECF0;
+        border-radius: 6px;
+        box-shadow: 0 1px 2px #1018280D;
+        &::after{
+            content:"";
+            top: 54%;
+            transform: translateY(-50%);
+            left: 10px;
+            position: absolute;
+        }
+        .select2-selection__rendered{
+            padding-left: 25px;
+        }
+        .select2-selection__arrow{
+            height: auto;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            b{
+                display: none;
+            }
+            &::after{
+                content: "\f107";
+                font: var(--fa-font-solid);
+                color: var(--color-11);
+            }
+        }
+    }
+}
+.location + .select2{
+    .select2-selection--single{
+        &::after{
+            content:  url(../images/location.png);
+        }
+    }
+}
+.property + .select2{
+    .select2-selection--single{
+        &::after{
+            content:  url(../images/house.png);
+        }
+    }
+}
+.price-range + .select2{
+    .select2-selection--single{
+        &::after{
+            content:  url(../images/dollar-circle.png);
+        }
+    }
+}

@@ -1,0 +1,25 @@
+//Abstract
+@import "./abstracts/mixin";
+//Component
+@import "./components/heading";
+@import "./components/button";
+//Global
+@import "./base/global";
+@import "./base/reusable-classes";
+// Layout Navigation
+@import "./layout/navbar";
+//Component
+@import "./components/banner";
+@import "./components/catagory";
+@import "./components/featured-properties";
+@import "./components/trustUs";
+@import "./components/findByLocation";
+@import "./components/shaping";
+@import "./components/review";
+@import "./components/plans";
+@import "./components/find-property";
+@import "./components/login";
+@import "./components/blog-page/blog-page";
+
+// Layout Navigation
+@import "./layout/footer";

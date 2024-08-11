@@ -1,0 +1,35 @@
+// Property Catagories
+.singlePropertyCatagory {
+    display: flex !important;
+    align-items: center;
+    border-radius: 12px;
+    border: 1.2px solid var(--STROKE-COLOR-2, #EAECF0);
+    padding: 20px 5px 20px 20px;
+    color: var(--color-7);
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px;
+        border-radius: 50%;
+        background: #f7663108;
+        margin-right: 10px;
+        flex-shrink: 0;
+        img{
+            height: 32px;
+            width: 32px;
+        }
+    }
+}
+.slick-list{
+    margin: 0 -15px;
+    @include responsive(sm){
+        margin: auto -5px;
+    }
+    .slick-slide{
+        margin: auto 15px;
+        @include responsive(sm){
+            margin: auto 5px;
+        }
+    }
+}

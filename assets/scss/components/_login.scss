@@ -1,0 +1,70 @@
+.full-width {
+    max-width: 1920px;
+    padding: 0 20px;
+    margin:0 auto;
+}
+.loginpart-wraper {
+    font-size: 14px;
+    .logo-part {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+    .form-part {
+        max-width: 530px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:100px;
+        .semibold-heading {
+            max-width: 356px;
+            margin-bottom: 30px;
+        }
+    }
+}
+.password-requrment {
+    color: var(--color-7);
+    margin-top: 20px;
+}
+.remembarForget {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 24px 0;
+    font-size: 16px;
+}
+.rememberMe {
+    color: var(--color-9);
+}
+.forget-pass {
+    color: var(--color-15);
+}
+.login-btn-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sign-up-link {
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    a {
+        color: var(--color-15);
+    }
+}
+.input-with-icon {
+    position: relative;
+    input {
+        padding-left: 40px;
+    }
+    & .input-icon {
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+}
+
+
+

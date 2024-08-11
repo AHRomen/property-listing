@@ -1,0 +1,207 @@
+/* Plan Part */
+.pricePlan{
+    color: var(--color-11);
+    .plans{
+        background: #f766310d;
+        border-radius: 12px;
+        padding: 40px;
+        @include responsive(sm){
+            padding: 15px;
+        }
+    }   
+}
+/*Single Price plan*/
+.single-price-plan{
+    background: var(--color-1);
+    padding: 40px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    transition: all ease-in .3s;
+    .plan-head{
+        border-bottom: 1px solid var(--color-4);
+        padding-bottom: 30px;
+        .img{
+           padding: 18px;
+           border-radius: 50%;
+           background: #4d77ff1f; 
+           margin-right: 20px;
+           transition: all ease-in .3s;
+           svg{
+            @include responsive(lg){
+                height: 20px;
+                width: 20px;    
+            }
+           }
+           path{
+            transition: all ease-in .3s;
+           }
+        }
+        .head-text{
+            color: var(--color-8);
+            transition: all ease-in .3s;
+            .name{
+                margin-bottom: 10px;
+            }
+            .rate{
+                font-size: 24px;
+                @include responsive(lg){
+                    font-size: 17px;    
+                }
+                .money{
+                    font-weight: 600;
+                    color: var(--color-11);
+                    transition: all ease-in .3s;
+                }
+            }
+        }
+    }
+    .plan-body{
+        padding-top: 30px;
+        ul{
+            color: var(--color-11);
+            transition: all ease-in .3s;
+            li{
+                position: relative;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                @include responsive(md){
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+                &.check::before{
+                    content: "\f00c";
+                    font: var(--fa-font-solid);
+                    color:var(--color-14);
+                    border: 1px solid var(--color-14);
+                }
+                &.cross::before{
+                    content: "\f00d";
+                    font: var(--fa-font-solid);
+                    color:var(--color-15); 
+                    border: 1px solid var(--color-15);
+                }
+                &.cross::before,
+                &.check::before{
+                    height: 20px;
+                    width: 20px;
+                    font-size: 12px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-shrink: 0;
+                    border-radius: 50%;
+                    background: var(--color-1);
+                    margin-right: 10px;
+                    transition: all ease-in .3s;
+                    @include responsive(md){
+                        font-size: 12px;
+                        height: 15px;
+                        width: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .plan-foot{
+        a{
+            color: var(--color-7);
+            border-radius: 8px;
+            border: 1.2px solid var(--color-4);
+            transition: all ease-in .3s;
+        }
+    }
+&:hover,
+&.active{
+  background: var(--color-15);  
+  .plan-head{
+    .img{
+        background: var(--color-1);
+        path{
+            fill: var(--color-15);
+        }
+      }
+      .head-text{
+        color: var(--color-1);
+        .money{
+            color: var(--color-1);
+        }
+      }
+  }
+  .plan-body{
+    ul{
+        color: var(--color-1);
+        li{
+            &.check::before,
+            &.cross::before{
+                border-color: var(--color-1);
+                color: var(--color-1);
+                background: transparent;
+            }
+        }
+    }
+  }
+  .plan-foot{
+    a{
+        color: var(--color-15) ;
+        background: var(--color-1);
+        border-color: var(--color-1);
+    }
+  }
+}
+}
+/*style two plan*/
+.plan-style-02{
+    .plans{
+        padding: 100px;
+        @include responsive(xl){
+            padding: 40px;
+        }
+        @include responsive(sm){
+            padding: 15px;
+        }
+        .chose-plan{
+            &:hover,
+            &.active{
+            background: var(--color-1);
+            border: 1px solid var(--color-15);
+            .plan-head{
+                .img{
+                    background: var(--color-15);
+                    path{
+                        fill: var(--color-1);
+                    }
+                  }
+                  .head-text{
+                    color: var(--color-8);
+                    .money{
+                        color: var(--color-11);
+                    }
+                  }
+            }
+            .plan-body{
+                ul{
+                    color: var(--color-11);
+                    li{
+                        .check::before{
+                            color: var(--color-14);
+                            border-color: var(--color-14);
+                        }
+                        .cross::before{
+                            color: var(--color-15);
+                            border-color: var(--color-15);
+                        }
+                    }
+                }
+            }
+            .plan-foot{
+                a{
+                    color: var(--color-1) ;
+                    background: var(--color-15);
+                    border-color: var(--color-15);
+                }
+              }
+            }
+        }
+    } 
+}

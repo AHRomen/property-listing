@@ -1,0 +1,33 @@
+/* Find by location part*/
+.findlocationsCard{
+    width: 100%;
+    height: 270px;
+    border-radius: 12px;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, #00000000 -6.3%, #000000 111.11%);              
+    }
+    .citys{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        z-index: 2;
+        color: var(--color-1);
+        h4{
+            color: var(--color-1);
+            @include responsive(xl){
+                font-size: 18px;
+            }
+        }
+    }
+}

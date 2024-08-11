@@ -1,0 +1,100 @@
+// Featureds Property Css
+.featured-items {
+    .slick-list {
+        overflow-x: clip;
+        overflow-y: visible;
+    }
+}
+.single-card{
+    border-radius: 12px;
+    border: none;
+    .head{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .ribbon{
+            position: absolute;
+            top: 20px;
+            left: -15px;
+           .ribbon-part-1{
+                padding: 10px;
+                background: var(--color-15);
+                color: var(--color-1);
+                position: relative;
+                border-radius: 12px 0 12px 0 ;
+                .ribbon-part-2{
+                    position: absolute;
+                    left: 0;
+                    top: 89%;
+                }
+           } 
+           &.for-sell{
+               .ribbon-part-1{
+                background:var(--color-22);
+               } 
+               .ribbon-part-2{
+                    path{
+                      fill: var(--color-22);
+                    }
+               }
+           }
+        }
+        .heart-img{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 14px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            &.active{
+                svg {
+                    path{
+                        fill: var(--color-15);
+                    }
+                }
+            }
+        }
+    }
+    .body{
+        border-radius: 12px;
+        box-shadow: 0px 3px 16px 0px #10182814;
+        .text{
+            padding:20px 0 20px 20px;
+            p{
+                margin: 10px 0 20px 0;
+                color: var(--color-8);
+            }
+            .value{
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 30px; 
+                color: var(--color-15);
+            }
+        }
+        .foot{
+            display: flex;
+            align-items: center;
+            padding: 20px 0 30px 20px;
+            border-top: 1px solid var(--color-4);
+            .foot-item{
+                display: flex;
+                flex-shrink: 0;
+                color: #212529;
+                span{
+                    margin-left: 10px;
+                    color: #212529;
+                }
+            }
+            .bath{
+                padding: 0 20px;
+                border-right: 1px solid var(--color-4);
+                border-left: 1px solid var(--color-4);
+                margin: 0 20px;
+            }
+        }
+    }
+}

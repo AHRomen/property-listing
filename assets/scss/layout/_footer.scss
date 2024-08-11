@@ -1,0 +1,98 @@
+/* Footer Part */
+.footer-area{
+    color: var(--color-7);
+    .footer-widget-title{
+        margin-bottom: 20px;
+        color: var(--color-11);
+    }
+    .text-links{
+        padding-top: 15px;
+        h4{
+            margin-bottom: 20px;
+        }
+        ul{
+            li{
+                margin-bottom: 14px ;
+                a{
+                    color: var(--color-7);
+                }
+            }
+        }
+    }
+    .footer-widget-form{
+       .footer-input{
+            position: relative;
+            display: inline-block;
+            @include responsive(xsm){
+                display: block;
+            }
+            input{
+                padding: 13px 14px 13px 34px;
+                background: transparent;
+                border-radius: 8px;
+                color: var(--color-7);
+                margin-right: 10px;
+                border: 1px solid var(--color-4);
+                box-shadow: 0px 1px 2px 0px #1018280d;
+                @include responsive(xsm){
+                    width: 100%;
+                }
+            }
+            &::after{
+                content: "\f0e0";
+                font: var(--fa-font-solid);
+                position: absolute;
+                font-size: 16px;
+                left: 14px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+       }
+        .submit-btn{
+            color: var(--color-1);
+            background: var(--color-15);
+            padding: 13px 18px;
+            border-radius: 8px;
+            border: none;
+        }
+    }
+    .copyright-area{
+        a{
+            color: var(--color-7);
+        }
+        @include responsive(xxsm){
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+    }
+}
+.footer-second-style{
+    background: var(--color-11);
+    color: var(--color-1);
+    .text-links{
+        .footer-widget-title{
+            color: var(--color-1);
+        }
+        ul{
+            li{
+                a{
+                    color: var(--color-1);
+                }
+            }
+        }
+    }
+    .devider{
+        opacity: 0.2;
+    }
+    svg{
+        path{
+            stroke: var(--color-1)
+        }
+    }
+    .copyright-area{
+        a{
+            color: var(--color-1);
+        }
+    }
+}

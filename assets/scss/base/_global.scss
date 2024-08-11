@@ -1,0 +1,89 @@
+/*--------------------------------------------------------------
+    Google Fonts
+--------------------------------------------------------------*/
+// Montserrat
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+// Manrope
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+// Prompt
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+:root {
+    --heading-font:'Montserrat', sans-serif;
+    --heading-font-1:'Prompt', sans-serif;
+    --body-font:'Manrope', sans-serif;
+    /*color*/
+    --color-1:#FFFFFF;
+    --color-2:#F9FAFB;
+    --color-3:#F2F4F7;
+    --color-4:#EAECF0;
+    --color-5:#D0D5DD;
+    --color-6:#98A2B3;
+    --color-7:#667085;
+    --color-8:#475467;
+    --color-9:#344054;
+    --color-10:#1D2939;
+    --color-11:#101828;
+    --color-12:#FF3B30;
+    --color-13:#FFCC00;
+    --color-14:#05BE70;
+    --color-15:#F76631;
+    --color-16:#4D77FF;
+    --color-17:#141457;
+    --color-18:#CEF6F7;
+    --color-19:#FF9F45;
+    --color-20:#262626;
+    --color-21:#FFAD60;
+    --color-22:#8A39E1;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    -moz-osx-font-smoothing: grayscale;
+    /* Firefox */
+    -webkit-font-smoothing: antialiased;
+    /* WebKit  */
+}
+body {
+    color: var(--color-4);
+    font-family: var(--body-font);
+    font-size: 16px;
+    line-height: 24px;
+}
+.custom-container {
+    max-width: 1560px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0;
+    font-weight: 700;
+    font-family: var(--heading-font);
+}
+ul{
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-4);
+    cursor: pointer;
+}
+p{
+    margin-bottom: 0;
+}
+// End Global Style

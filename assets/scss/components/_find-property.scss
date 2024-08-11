@@ -1,0 +1,44 @@
+/* Find Property*/
+.find-property{
+    color: var(--color-8);
+    .find{
+        padding: 0 60px;
+        position: relative;
+        @include responsive(xl){
+            padding:0 15px;
+        }
+        @include responsive(xsm){
+            padding: 0;
+        }
+        &::after{
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 30%;  
+          background: #8dc6e42e;
+          border-radius: 12px;
+          z-index: -1;
+          @include responsive(md){
+            top: 0;
+          }
+        }
+        p{
+            margin: 30px 0 60px 0;
+        }
+        .contact-btn{
+            background: var(--color-15);
+            color: var(--color-1);
+            padding: 17px 56px;
+        }
+    }
+}
+.find-second-style{
+    .find{
+        padding: 0;
+        &::after{
+            display: none;
+        }
+    }
+}

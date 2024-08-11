@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPROPERTY</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!--Plugin file-->
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <!-- Style Css File -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="bg-sky-blue sticky-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container custom-container">      
+                <div class="logo-wraper">
+                    <a href="javascript:void(0)" class="logo">
+                        <img src="./assets/images/xproperties.png" alt="XPROPERTY">
+                    </a>
+                </div>
+                <div class="responsive-mobile-menu ms-auto">
+                    <button class="navbar-toggler bg-w" type="button" data-bs-toggle="collapse" data-bs-target="#listing-menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="javascript:void(0)" class="click-nav-right-icon">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="listing-menu">
+                    <ul class="navbar-nav m-lg-auto text-center mt-5">
+                        <li class="current-menu-item menu-item-has-children">
+                            <a href="./index.html">Home<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="current-menu-item">
+                                    <a href="javascript:void(0)">Home1</a>
+                                </li>
+                                <li class="current-menu-item">
+                                    <a href="javascript:void(0)">Home2</a>
+                                </li>
+                            </ul>
+                        </li>             
+                        <li class="current-menu-item">
+                            <a href="javascript:void(0)">About</a>
+                        </li>
+                        <li class="current-menu-item">
+                            <a href="./single-blog.html">Blogs</a>
+                        </li>
+                        <li class="current-menu-item">
+                            <a href="./get-in-touch.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-right-content">
+                    <div class="single-right-content">
+                        <div class="navbar-right-flex d-flex">
+                            <div class="navbar-right-btn-1">
+                                <a href="./login.html" class="cmn-btn transparent-btn">Login</a>
+                            </div>
+                            <div class="navbar-right-btn-2">
+                                <a href="javascript:(0)" class="cmn-btn fill-btn"><span class="me-2"><i class="fa-solid fa-plus"></i></span>Add Property</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End of Header -->
+    <!-- Banner Part -->
+    <section class="banner bg-sky-blue">
+        <div class="custom-container">
+            <div class="main-heading d-flex justify-content-center text-center">
+                <h1 class="main-heading">Rent or Buy Properties Most Conveniently</h1>
+            </div>
+            <p class="banner-para">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+            <div class="search-porperty">
+                <div class="filter">
+                    <form action="#" method="get" class="filter-form">
+                        <select name="location-0" id="location-0" class="location location-0">
+                            <option value=""></option>
+                            <option value="washington">Washington</option>
+                            <option value="new-york">New york</option>
+                            <option value="san-francisco">San Fransisco</option>
+                            <option value="dubai">Dubai</option>
+                        </select>
+                        <select name="property-0" id="property-0" class="property property-0">
+                            <option value="">Property Type</option>
+                            <option value="new-york">New york</option>
+                            <option value="san-francisco">San Fransisco</option>
+                            <option value="dubai">Dubai</option>
+                        </select>
+                        <select name="price-range-0" id="price-range-0" class="price-range price-range-0">
+                            <option value="">Property Type</option>
+                            <option value="new-york">New york</option>
+                            <option value="san-francisco">San Fransisco</option>
+                            <option value="dubai">Dubai</option>
+                        </select>
+                        <button type="button" class="cmn-btn fill-btn">Searech</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="banner-img">
+            <img src="./assets/images/banner.png" alt="Banner" class="w-100">
+        </div>
+    </section>
+    <!--proerty catagories-->
+    <section class="property-category pt-100 pb-50">
+        <div class="custom-container">
+            <div class="head-with-btn mb-60">
+                <h2 class="second-heading">Property categories</h2>
+                <div class="arrow-icon"></div>
+            </div>
+            <div class="property-items global-slick-init" data-infinite="true" data-arrows="true" data-dots="false" data-slidestoshow="6" data-swipetoslide="false" data-autoplay="true" data-autoplayspeed="2500" data-appendArrows='.arrow-icon' data-prevarrow="<span class='slider-arrow slider-pre'><i class='fa-solid fa-angle-left'></i></span>" data-nextarrow="<span class='slider-arrow slider-next'><i class='fa-solid fa-angle-right'></i></span>" data-rtl="{{get_user_lang_direction() == 'rtl' ? 'true' : 'false'}}">
+                <div class="singlePropertyCatagory">
+                    <div class="img"><img src="./assets/images/houses.png" alt="houses"></div>
+                    <div class="text">
+                        <h4 class="fourth-heading">Houses</h4>
+                        <p><span class="number">580</span> Properties</p>
+                    </div>
+                </div>
+                <div class="singlePropertyCatagory">
+                    <div class="img"><img src="./assets/images/appertments.png" alt="appertments"></div>
+                    <div class="text">
+                        <h4 class="fourth-heading">Apartments</h4>
+                        <p><span class="number">1900</span> Properties</p>
+                    </div>
+                </div>
+                <div class="singlePropertyCatagory">
+                    <div class="img"><img src="./assets/images/hotels.png" alt="hotels"></div>
+                    <div class="text">
+                        <h4 class="fourth-heading">Hotels</h4>
+                        <p><span class="number">880</span> Properties</p>
+                    </div>
+                </div>
+                <div class="singlePropertyCatagory">
+                    <div class="img"><img src="./assets/images/office.png" alt="office"></div>
+                    <div class="text">
+                        <h4 class="fourth-heading">Offices</h4>
+                        <p><span class="number">320</span> Properties</p>
+                    </div>
+                </div>
+                <div class="singlePropertyCatagory">
+                    <div class="img"><img src="./assets/images/stores.png" alt="stores"></div>
+                    <div class="text">
+                        <h4 class="fourth-heading">Stores</h4>
+                        <p><span class="number">156</span> Properties</p>
+                    </div>
+                </div>
+                <div class="singlePropertyCatagory">
+                    <div class="img"><img src="./assets/images/warehouses.png" alt="warehouses"></div>
+                    <div class="text">
+                        <h4 class="fourth-heading">Warehouses</h4>
+                        <p><span class="number">90</span> Properties</p>
+                    </div>
+                </div>
+                <div class="singlePropertyCatagory">
+                    <div class="img"><img src="./assets/images/office.png" alt="office"></div>
+                    <div class="text">
+                        <h4 class="fourth-heading">Offices</h4>
+                        <p><span class="number">320</span> Properties</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fratured Property-->
+    <section class="freatured-property pt-50 pb-100">
+        <div class="custom-container">
+            <div class="head-with-btn mb-60">
+                <h2 class="second-heading">Featured properties</h2>
+                <div class="arrow-icon1"></div>
+            </div>
+            <div class="featured-items global-slick-init" data-infinite="true" data-arrows="true" data-dots="false" data-slidestoshow="4" data-swipetoslide="true" data-autoplay="false" data-autoplayspeed="2500" data-appendArrows='.arrow-icon1' data-prevarrow="<span class='slider-arrow slider-pre'><i class='fa-solid fa-angle-left'></i></span>" data-nextarrow="<span class='slider-arrow slider-next'><i class='fa-solid fa-angle-right'></i></span>" data-rtl="{{get_user_lang_direction() == 'rtl' ? 'true' : 'false'}}">
+                <div class="single-card">
+                    <div class="head">
+                        <img src="./assets/images/card1.png" alt="grand-haven">
+                        <div class="ribbon for-rent">
+                            <div class="ribbon-part-1">FOR RENT
+                                <div class="ribbon-part-2">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.5 19L1.8 6.3C0.6 5.1 0 3.6 0 2V0H14.5V19Z" fill="#EC4609"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                        </div>                     
+                        <div class="heart-img active">
+                            <svg width="22" height="20" viewBox="0 0 22 20" fill="#000" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 19.65C10.69 19.65 10.39 19.61 10.14 19.52C6.32 18.21 0.25 13.56 0.25 6.68998C0.25 3.18998 3.08 0.349976 6.56 0.349976C8.25 0.349976 9.83 1.00998 11 2.18998C12.17 1.00998 13.75 0.349976 15.44 0.349976C18.92 0.349976 21.75 3.19998 21.75 6.68998C21.75 13.57 15.68 18.21 11.86 19.52C11.61 19.61 11.31 19.65 11 19.65ZM6.56 1.84998C3.91 1.84998 1.75 4.01998 1.75 6.68998C1.75 13.52 8.32 17.32 10.63 18.11C10.81 18.17 11.2 18.17 11.38 18.11C13.68 17.32 20.26 13.53 20.26 6.68998C20.26 4.01998 18.1 1.84998 15.45 1.84998C13.93 1.84998 12.52 2.55998 11.61 3.78998C11.33 4.16998 10.69 4.16998 10.41 3.78998C9.48 2.54998 8.08 1.84998 6.56 1.84998Z" fill="#FF0000"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="text">
+                            <h3 class="third-heading">Grand Haven</h3>
+                            <p>4140 Parker Rd. Allentown, New Mexico</p>
+                            <div class="value">&dollar;2160,000</div>
+                        </div>
+                        <div class="foot">
+                            <div class="bed foot-item">
+                                <img src="./assets/images/bed.png" alt="bed"><span>6</span>
+                            </div>
+                            <div class="bath foot-item">
+                                <img src="./assets/images/bath.png" alt="bath"><span>3</span>
+                            </div>
+                            <div class="area foot-item">
+                                <img src="./assets/images/area.png" alt="area"><span>2350</span>Sqft
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-card">
+                    <div class="head">
+                        <img src="./assets/images/card2.png" alt="Modern Cave">  
+                        <div class="ribbon for-rent">
+                            <div class="ribbon-part-1">FOR RENT
+                                <div class="ribbon-part-2">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.5 19L1.8 6.3C0.6 5.1 0 3.6 0 2V0H14.5V19Z" fill="#EC4609"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                        </div>                      
+                        <div class="heart-img">
+                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 19.65C10.69 19.65 10.39 19.61 10.14 19.52C6.32 18.21 0.25 13.56 0.25 6.68998C0.25 3.18998 3.08 0.349976 6.56 0.349976C8.25 0.349976 9.83 1.00998 11 2.18998C12.17 1.00998 13.75 0.349976 15.44 0.349976C18.92 0.349976 21.75 3.19998 21.75 6.68998C21.75 13.57 15.68 18.21 11.86 19.52C11.61 19.61 11.31 19.65 11 19.65ZM6.56 1.84998C3.91 1.84998 1.75 4.01998 1.75 6.68998C1.75 13.52 8.32 17.32 10.63 18.11C10.81 18.17 11.2 18.17 11.38 18.11C13.68 17.32 20.26 13.53 20.26 6.68998C20.26 4.01998 18.1 1.84998 15.45 1.84998C13.93 1.84998 12.52 2.55998 11.61 3.78998C11.33 4.16998 10.69 4.16998 10.41 3.78998C9.48 2.54998 8.08 1.84998 6.56 1.84998Z" fill="#475467"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="text">
+                            <h3 class="third-heading">Modern Cave</h3>
+                            <p>3517 W. Gray St. Utica, Pennsylvania</p>
+                            <div class="value">&dollar;2160,000</div>
+                        </div>
+                        <div class="foot">
+                            <div class="bed foot-item">
+                                <img src="./assets/images/bed.png" alt="bed"><span>6</span>
+                            </div>
+                            <div class="bath foot-item">
+                                <img src="./assets/images/bath.png" alt="bath"><span>3</span>
+                            </div>
+                            <div class="area foot-item">
+                                <img src="./assets/images/area.png" alt="area"><span>2350</span>Sqft
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-card">
+                    <div class="head">
+                        <img src="./assets/images/card3.png" alt="Oceanview cottage">
+                        <div class="ribbon for-sell">
+                            <div class="ribbon-part-1">FOR SELL
+                                <div class="ribbon-part-2">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.5 19L1.8 6.3C0.6 5.1 0 3.6 0 2V0H14.5V19Z" fill="#EC4609"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="heart-img">
+                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 19.65C10.69 19.65 10.39 19.61 10.14 19.52C6.32 18.21 0.25 13.56 0.25 6.68998C0.25 3.18998 3.08 0.349976 6.56 0.349976C8.25 0.349976 9.83 1.00998 11 2.18998C12.17 1.00998 13.75 0.349976 15.44 0.349976C18.92 0.349976 21.75 3.19998 21.75 6.68998C21.75 13.57 15.68 18.21 11.86 19.52C11.61 19.61 11.31 19.65 11 19.65ZM6.56 1.84998C3.91 1.84998 1.75 4.01998 1.75 6.68998C1.75 13.52 8.32 17.32 10.63 18.11C10.81 18.17 11.2 18.17 11.38 18.11C13.68 17.32 20.26 13.53 20.26 6.68998C20.26 4.01998 18.1 1.84998 15.45 1.84998C13.93 1.84998 12.52 2.55998 11.61 3.78998C11.33 4.16998 10.69 4.16998 10.41 3.78998C9.48 2.54998 8.08 1.84998 6.56 1.84998Z" fill="#475467"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="text">
+                            <h3 class="third-heading">Oceanview cottage</h3>
+                            <p>1963 Tyler Avenue Miami, Florida</p>
+                            <div class="value">&dollar;2160,000</div>
+                        </div>
+                        <div class="foot">
+                            <div class="bed foot-item">
+                                <img src="./assets/images/bed.png" alt="bed"><span>6</span>
+                            </div>
+                            <div class="bath foot-item">
+                                <img src="./assets/images/bath.png" alt="bath"><span>3</span>
+                            </div>
+                            <div class="area foot-item">
+                                <img src="./assets/images/area.png" alt="area"><span>2350</span>Sqft
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-card">
+                    <div class="head">
+                        <img src="./assets/images/card4.png" alt="grand-haven">  
+                        <div class="ribbon for-sell">
+                            <div class="ribbon-part-1">FOR SELL
+                                <div class="ribbon-part-2">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.5 19L1.8 6.3C0.6 5.1 0 3.6 0 2V0H14.5V19Z" fill="#EC4609"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                        </div>                      
+                        <div class="heart-img">
+                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 19.65C10.69 19.65 10.39 19.61 10.14 19.52C6.32 18.21 0.25 13.56 0.25 6.68998C0.25 3.18998 3.08 0.349976 6.56 0.349976C8.25 0.349976 9.83 1.00998 11 2.18998C12.17 1.00998 13.75 0.349976 15.44 0.349976C18.92 0.349976 21.75 3.19998 21.75 6.68998C21.75 13.57 15.68 18.21 11.86 19.52C11.61 19.61 11.31 19.65 11 19.65ZM6.56 1.84998C3.91 1.84998 1.75 4.01998 1.75 6.68998C1.75 13.52 8.32 17.32 10.63 18.11C10.81 18.17 11.2 18.17 11.38 18.11C13.68 17.32 20.26 13.53 20.26 6.68998C20.26 4.01998 18.1 1.84998 15.45 1.84998C13.93 1.84998 12.52 2.55998 11.61 3.78998C11.33 4.16998 10.69 4.16998 10.41 3.78998C9.48 2.54998 8.08 1.84998 6.56 1.84998Z" fill="#475467"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="text">
+                            <h3 class="third-heading">Residintial ascot</h3>
+                            <p>6391 Elgin St. Celina, Delaware</p>
+                            <div class="value">&dollar;2160,000</div>
+                        </div>
+                        <div class="foot">
+                            <div class="bed foot-item">
+                                <img src="./assets/images/bed.png" alt="bed"><span>6</span>
+                            </div>
+                            <div class="bath foot-item">
+                                <img src="./assets/images/bath.png" alt="bath"><span>3</span>
+                            </div>
+                            <div class="area foot-item">
+                                <img src="./assets/images/area.png" alt="area"><span>2350</span>Sqft
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-card">
+                    <div class="head">
+                        <img src="./assets/images/card3.png" alt="grand-haven"> 
+                        <div class="ribbon for-rent">
+                            <div class="ribbon-part-1">FOR RENT
+                                <div class="ribbon-part-2">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.5 19L1.8 6.3C0.6 5.1 0 3.6 0 2V0H14.5V19Z" fill="#EC4609"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="heart-img">
+                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 19.65C10.69 19.65 10.39 19.61 10.14 19.52C6.32 18.21 0.25 13.56 0.25 6.68998C0.25 3.18998 3.08 0.349976 6.56 0.349976C8.25 0.349976 9.83 1.00998 11 2.18998C12.17 1.00998 13.75 0.349976 15.44 0.349976C18.92 0.349976 21.75 3.19998 21.75 6.68998C21.75 13.57 15.68 18.21 11.86 19.52C11.61 19.61 11.31 19.65 11 19.65ZM6.56 1.84998C3.91 1.84998 1.75 4.01998 1.75 6.68998C1.75 13.52 8.32 17.32 10.63 18.11C10.81 18.17 11.2 18.17 11.38 18.11C13.68 17.32 20.26 13.53 20.26 6.68998C20.26 4.01998 18.1 1.84998 15.45 1.84998C13.93 1.84998 12.52 2.55998 11.61 3.78998C11.33 4.16998 10.69 4.16998 10.41 3.78998C9.48 2.54998 8.08 1.84998 6.56 1.84998Z" fill="#475467"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="text">
+                            <h3 class="third-heading">Grand Haven</h3>
+                            <p>4140 Parker Rd. Allentown, New Mexico</p>
+                            <div class="value">&dollar;2160,000</div>
+                        </div>
+                        <div class="foot">
+                            <div class="bed foot-item">
+                                <img src="./assets/images/bed.png" alt="bed"><span>6</span>
+                            </div>
+                            <div class="bath foot-item">
+                                <img src="./assets/images/bath.png" alt="bath"><span>3</span>
+                            </div>
+                            <div class="area foot-item">
+                                <img src="./assets/images/area.png" alt="area"><span>2350</span>Sqft
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Trust Us-->
+    <section class="trust pt-100 pb-100">
+        <div class="custom-container">
+            <div class="row">
+                <div class="col-lg-3 text-center">
+                    <h2 class="second-heading">Why should <span class="d-block">you trust us?</span></h2>
+                </div>
+                <div class="col-lg-9">
+                    <div class="achivements">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="achivement">
+                                    <div class="img">
+                                        <img src="./assets/images/achive1.png" alt="house">
+                                    </div>
+                                    <div class="text">
+                                        <h5>82K</h5>
+                                        <p>Properties are listed and ready for occupancy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="achivement">
+                                    <div class="img">
+                                        <img src="./assets/images/achive2.png" alt="house">
+                                    </div>
+                                    <div class="text">
+                                        <h5>16K</h5>
+                                        <p>Peoples found their loving dream place</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="achivement">
+                                    <div class="img">
+                                        <img src="./assets/images/achive3.png" alt="house">
+                                    </div>
+                                    <div class="text">
+                                        <h5>38</h5>
+                                        <p>Awards won as best property listing site.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--Find by location-->
+     <section class="findLocation search pt-100 pb-50">
+        <div class="custom-container">
+            <div class="head-with-btn mb-60">
+                <h2 class="second-heading">Find by location</h2>
+                <div class="arrow-icon2"></div>
+            </div> 
+            <div class="find-items  global-slick-init" data-infinite="true" data-arrows="true" data-dots="false" data-slidestoshow="6" data-swipetoslide="true" data-autoplay="false" data-autoplayspeed="2500" data-appendArrows='.arrow-icon2' data-prevarrow="<span class='slider-arrow slider-pre'><i class='fa-solid fa-angle-left'></i></span>" data-nextarrow="<span class='slider-arrow slider-next'><i class='fa-solid fa-angle-right'></i></span>" data-rtl="{{get_user_lang_direction() == 'rtl' ? 'true' : 'false'}}">
+                <div class="slickItems">
+                    <div class="findlocationsCard ny" style="background-image: url('/assets/images/ny.png');">
+                        <div class="citys">
+                            <h4 class="city-name">New York</h4>
+                            <div class="properties"><span class="number">640</span> Properties</div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="slickItems">
+                    <div class="findlocationsCard was" style="background-image: url('/assets/images/washington.png');">
+                        <div class="citys">
+                            <h4 class="city-name">Washington</h4>
+                            <div class="properties"><span class="number">316</span> Properties</div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="slickItems">
+                    <div class="findlocationsCard san" style="background-image: url('/assets/images/sanfrancisco.png');">
+                        <div class="citys">
+                            <h4 class="city-name">San Fransisco</h4>
+                            <div class="properties"><span class="number">260</span> Properties</div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="slickItems">
+                    <div class="findlocationsCard sea" style="background-image: url('/assets/images/seattle.png');">
+                        <div class="citys">
+                            <h4 class="city-name">Seattle</h4>
+                            <div class="properties"><span class="number">85</span> Properties</div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="slickItems">
+                    <div class="findlocationsCard dubai" style="background-image: url('/assets/images/dubai.png');">
+                        <div class="citys">
+                            <h4 class="city-name">Dubai</h4>
+                            <div class="properties"><span class="number">282</span> Properties</div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="slickItems">
+                    <div class="findlocationsCard paris" style="background-image: url('/assets/images/paris.png');">
+                        <div class="citys">
+                            <h4 class="city-name">Paris</h4>
+                            <div class="properties"><span class="number">190</span> Properties</div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="slickItems">
+                    <div class="findlocationsCard dubai" style="background-image: url('/assets/images/dubai.png');">
+                        <div class="citys">
+                            <h4 class="city-name">Dubai</h4>
+                            <div class="properties"><span class="number">282</span> Properties</div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--shaping the way-->
+    <section class="shaping pt-50 pb-50">
+        <div class="custom-container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-7">
+                    <div class="img">
+                        <img src="./assets/images/shaping.png" class="img-fluid" alt="House">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <h2 class="second-heading">Shaping the way people <span class="d-block d-lg-inline"></span> buy, sell or rent their properties</h2>
+                    <p class="text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <div class="shaping-btn">
+                        <a href="javascript:void(0)" class="cmn-btn fill-btn">List your property</a>
+                        <a href="javascript:void(0)" class="cmn-btn works-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM14.66 13.73L13.38 14.47L12.1 15.21C10.45 16.16 9.1 15.38 9.1 13.48V12V10.52C9.1 8.61 10.45 7.84 12.1 8.79L13.38 9.53L14.66 10.27C16.31 11.22 16.31 12.78 14.66 13.73Z" fill="#101828"/>
+                            </svg> How it works?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Review -->
+    <section class="reviews pt-50 pb-50">
+        <div class="custom-container">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <h2 class="second-heading">Don’t just rely on <span class="d-block d-lg-inline"></span> our words, See what our user says</h2>
+                </div>
+                <div class="col-lg-8">
+                    <div class="r-slide">
+                        <div class="arrow-icon3"></div>
+                        <div class="slider-dots"></div>
+                        <div class="review-item global-slick-init" data-infinite="true" data-arrows="true" data-dots="true" data-slidestoshow="1" data-swipetoslide="false" data-autoplay="false" data-autoplayspeed="2500" data-appendArrows='.arrow-icon3' data-appendDots='.slider-dots' data-prevarrow="<span class='slider-arrow slider-pre'><i class='fa-solid fa-angle-left'></i></span>" data-nextarrow="<span class='slider-arrow slider-next'><i class='fa-solid fa-angle-right'></i></span>">
+                            <div class="review">
+                                <div class="row gy-sm-1 gy-5">
+                                    <div class="col-sm-3">
+                                        <div class="slider_imges">
+                                            <img src="./assets/images/reviewr1.png" class="img-fluid" alt="reviewr1">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9 align-self-center">
+                                        <div class="slider_body">
+                                            <div class="rating">
+                                                <ul>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="review_text">
+                                                <p> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
+                                            </div>
+                                            <div class="review_name">
+                                                <span class="name">Wade Warren</span>House Renter.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="row gy-sm-1 gy-5">
+                                    <div class="col-sm-3">
+                                        <div class="slider_imges">
+                                            <img src="./assets/images/reviewr1.png" class="img-fluid" alt="reviewr1">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9 align-self-center">
+                                        <div class="slider_body">
+                                            <div class="rating">
+                                                <ul>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="review_text">
+                                                <p> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
+                                            </div>
+                                            <div class="review_name">
+                                                <span class="name">Wade Warren</span>House Renter.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="row gy-sm-1 gy-5">
+                                    <div class="col-sm-3">
+                                        <div class="slider_imges">
+                                            <img src="./assets/images/reviewr1.png" class="img-fluid" alt="reviewr1">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9 align-self-center">
+                                        <div class="slider_body">
+                                            <div class="rating">
+                                                <ul>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="review_text">
+                                                <p> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
+                                            </div>
+                                            <div class="review_name">
+                                                <span class="name">Wade Warren</span>House Renter.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--Plan Part-->
+     <section class="pricePlan pt-50 pb-50">
+        <div class="custom-container">
+            <div class="heading">
+                <h2 class="second-heading text-center">Choose the right <span class="d-block">plan for your listings</span></h2>
+            </div>
+            <div class="plans mt-60">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-price-plan">
+                            <div class="plan-head d-flex align-items-center">
+                                <div class="img">
+                                    <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.3333 25.3331H27V10.3065C27 9.4798 26.6266 8.70646 25.9733 8.1998L24.3333 6.9198L24.3066 3.65313C24.3066 2.9198 23.7066 2.33313 22.9733 2.33313H18.4266L16.64 0.946465C15.68 0.186465 14.32 0.186465 13.36 0.946465L4.02663 8.1998C3.37329 8.70646 2.99996 9.4798 2.99996 10.2931L2.93329 25.3331H1.66663C1.11996 25.3331 0.666626 25.7865 0.666626 26.3331C0.666626 26.8798 1.11996 27.3331 1.66663 27.3331H28.3333C28.88 27.3331 29.3333 26.8798 29.3333 26.3331C29.3333 25.7865 28.88 25.3331 28.3333 25.3331ZM7.66663 13.9998V11.9998C7.66663 11.2665 8.26663 10.6665 8.99996 10.6665H11.6666C12.4 10.6665 13 11.2665 13 11.9998V13.9998C13 14.7331 12.4 15.3331 11.6666 15.3331H8.99996C8.26663 15.3331 7.66663 14.7331 7.66663 13.9998ZM18.3333 25.3331H11.6666V21.6665C11.6666 20.5598 12.56 19.6665 13.6666 19.6665H16.3333C17.44 19.6665 18.3333 20.5598 18.3333 21.6665V25.3331ZM22.3333 13.9998C22.3333 14.7331 21.7333 15.3331 21 15.3331H18.3333C17.6 15.3331 17 14.7331 17 13.9998V11.9998C17 11.2665 17.6 10.6665 18.3333 10.6665H21C21.7333 10.6665 22.3333 11.2665 22.3333 11.9998V13.9998Z" fill="#4D77FF"/>
+                                    </svg>
+                                </div>
+                                <div class="head-text">
+                                    <div class="name">Basic</div>
+                                    <div class="rate"><span class="money">&dollar;0/</span> Lifetime</div>
+                                </div>
+                            </div>
+                            <div class="plan-body">
+                                <ul>
+                                    <li class="check">6 credits per month (2 Credits per listings)</li>
+                                    <li class="check">Listings will be active for 10 days</li>
+                                    <li class="check">Credits valid for 30 days</li>
+                                    <li class="cross">Priority support</li>
+                                    <li class="cross">Get more exposures</li>
+                                    <li class="cross">Advanced tracking and analytics</li>
+                                </ul>
+                            </div>
+                            <div class="plan-foot">
+                                <a href="javascript:void(0)" class="plan-btn cmn-btn w-100">Get Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-price-plan active">
+                            <div class="plan-head d-flex align-items-center">
+                                <div class="img">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.3331 6.18648L8.42647 3.26648C5.2398 1.70648 2.62646 3.29315 2.62646 6.78648V26.5732C2.62646 28.0932 3.89313 29.3332 5.4398 29.3332H15.3331C16.0665 29.3332 16.6665 28.7332 16.6665 27.9998V9.87982C16.6665 8.47982 15.6131 6.81315 14.3331 6.18648ZM11.9598 18.3331H7.33313C6.78646 18.3331 6.33313 17.8798 6.33313 17.3331C6.33313 16.7865 6.78646 16.3331 7.33313 16.3331H11.9598C12.5065 16.3331 12.9598 16.7865 12.9598 17.3331C12.9598 17.8798 12.5198 18.3331 11.9598 18.3331ZM11.9598 12.9998H7.33313C6.78646 12.9998 6.33313 12.5465 6.33313 11.9998C6.33313 11.4531 6.78646 10.9998 7.33313 10.9998H11.9598C12.5065 10.9998 12.9598 11.4531 12.9598 11.9998C12.9598 12.5465 12.5198 12.9998 11.9598 12.9998Z" fill="#F76631"/>
+                                        <path d="M29.3332 24.0532V25.9999C29.3332 27.8399 27.8398 29.3332 25.9998 29.3332H19.9598C19.2398 29.3332 18.6665 28.7599 18.6665 28.0399V25.1599C20.0932 25.3332 21.5998 24.9199 22.6798 24.0532C23.5865 24.7866 24.7465 25.2266 26.0132 25.2266C27.2532 25.2266 28.4132 24.7866 29.3332 24.0532Z" fill="#F76631"/>
+                                        <path d="M29.3332 20.0665V20.0799C29.2265 21.8265 27.7998 23.2265 26.0132 23.2265C24.1598 23.2265 22.6798 21.7199 22.6798 19.8932C22.6798 21.9332 20.7998 23.5732 18.6665 23.1599V15.9999C18.6665 15.1465 19.4532 14.5065 20.2932 14.6932L22.6798 15.2265L23.3198 15.3732L26.0398 15.9865C26.6932 16.1199 27.2932 16.3465 27.8132 16.6799C27.8132 16.6932 27.8265 16.6932 27.8265 16.6932C27.9598 16.7865 28.0932 16.8932 28.2132 17.0132C28.8265 17.6265 29.2265 18.5199 29.3198 19.8265C29.3198 19.9065 29.3332 19.9865 29.3332 20.0665Z" fill="#F76631"/>
+                                    </svg>
+                                </div>
+                                <div class="head-text">
+                                    <div class="name">Professional</div>
+                                    <div class="rate"><span class="money">&dollar;99 /</span> Lifetime</div>
+                                </div>
+                            </div>
+                            <div class="plan-body">
+                                <ul>
+                                    <li class="check">50 credits per month (2 Credits per listings)</li>
+                                    <li class="check">Listings will be active for 30 days</li>
+                                    <li class="check">Credits valid for 30 days</li>
+                                    <li class="check">Priority support</li>
+                                    <li class="check">Get more exposures</li>
+                                    <li class="check">Advanced tracking and analytics</li>
+                                </ul>
+                            </div>
+                            <div class="plan-foot">
+                                <a href="javascript:void(0)" class="plan-btn cmn-btn w-100">Get Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-price-plan">
+                            <div class="plan-head d-flex align-items-center">
+                                <div class="img">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.1334 5.53317C14.1334 5.7865 13.9201 5.99984 13.6667 5.99984H12.1601C9.28008 5.99984 6.93341 8.3465 6.93341 11.2265V23.5332C6.93341 23.7865 6.72008 23.9998 6.46675 23.9998H5.53341C3.94675 23.9998 2.66675 22.7198 2.66675 21.1332V5.53317C2.66675 3.9465 3.94675 2.6665 5.53341 2.6665H11.2667C12.8534 2.6665 14.1334 3.9465 14.1334 5.53317Z" fill="#A63EC5"/>
+                                        <path d="M29.3334 5.53317V21.1332C29.3334 22.7198 28.0534 23.9998 26.4667 23.9998H25.6267C25.3734 23.9998 25.16 23.7865 25.16 23.5332V11.2265C25.16 8.3465 22.8134 5.99984 19.9334 5.99984H18.3334C18.08 5.99984 17.8667 5.7865 17.8667 5.53317C17.8667 3.9465 19.1467 2.6665 20.7334 2.6665H26.4667C28.0534 2.6665 29.3334 3.9465 29.3334 5.53317Z" fill="#A63EC5"/>
+                                        <path d="M19.9333 8H12.16C10.3733 8 8.93335 9.44 8.93335 11.2267V26.1067C8.93335 27.8933 10.3733 29.3333 12.16 29.3333H14.3334C14.7067 29.3333 15 29.04 15 28.6667V25.3333C15 24.7867 15.4534 24.3333 16 24.3333C16.5467 24.3333 17 24.7867 17 25.3333V28.6667C17 29.04 17.2934 29.3333 17.6667 29.3333H19.9467C21.72 29.3333 23.16 27.8933 23.16 26.12V11.2267C23.16 9.44 21.72 8 19.9333 8ZM18.6667 19.6667H13.3333C12.7867 19.6667 12.3333 19.2133 12.3333 18.6667C12.3333 18.12 12.7867 17.6667 13.3333 17.6667H18.6667C19.2134 17.6667 19.6667 18.12 19.6667 18.6667C19.6667 19.2133 19.2134 19.6667 18.6667 19.6667ZM18.6667 15.6667H13.3333C12.7867 15.6667 12.3333 15.2133 12.3333 14.6667C12.3333 14.12 12.7867 13.6667 13.3333 13.6667H18.6667C19.2134 13.6667 19.6667 14.12 19.6667 14.6667C19.6667 15.2133 19.2134 15.6667 18.6667 15.6667Z" fill="#A63EC5"/>
+                                    </svg>
+                                </div>
+                                <div class="head-text">
+                                    <div class="name">Basic</div>
+                                    <div class="rate"><span class="money">&dollar;199 /</span> Lifetime</div>
+                                </div>
+                            </div>
+                            <div class="plan-body">
+                                <ul>
+                                    <li class="check">140 credits per month (2 Credits per listings)</li>
+                                    <li class="check">Listings will be active for 45 days</li>
+                                    <li class="check">Credits valid for lifrtime</li>
+                                    <li class="check">Priority support</li>
+                                    <li class="check">Get more exposures</li>
+                                    <li class="check">Advanced tracking and analytics</li>
+                                </ul>
+                            </div>
+                            <div class="plan-foot">
+                                <a href="javascript:void(0)" class="plan-btn cmn-btn w-100">Get Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--Find Property-->
+     <section class="find-property pb-50 pt-50">
+        <div class="custom-container">
+            <div class="find">
+                <div class="row g-4">      
+                    <div class="col-md-6">
+                        <div class="img">
+                            <img src="./assets/images/find-property.png" class="img-fluid" alt="find property"> 
+                         </div>
+                    </div>             
+                    <div class="col-md-6 align-self-end">
+                        <h2 class="second-heading">Find the right property you need quickly</h2>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <a href="javascript:void(0)" class="fill-btn cmn-btn mb-60">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer Part-->
+    <footer class="footer-area pt-50">
+        <div class="custom-container">
+            <div class="footer-area-wraper">
+                <div class="row footer-area-top pb-50">
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-widget widget">
+                           <div class="footer-content-logo">
+                                <a href="javascript:void(0)"><img src="./assets/images/xproperties.png" alt="xproperties"></a>
+                           </div> 
+                           <div class="footer-widget-inner mt-5">
+                                <ul class="ps-2">
+                                    <li class="mb-3"><i class="fa-solid fa-phone"></i><span class="ms-3">(629) 555-0129</span></li>
+                                    <li class="mb-3"><i class="fa-solid fa-envelope"></i><span class="ms-3">bill.sanders@example.com</span></li>
+                                    <li><i class="fa-solid fa-location-dot"></i><span class="ms-3">8502 Preston Rd. Inglewood, Maine</span></li>
+                                </ul>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-3 col-4">
+                        <div class="cities text-links footer-widget widget">
+                            <h4 class="fourth-heading footer-widget-title">Cities</h4>
+                                <ul>
+                                    <li><a href="javascript:void(0)">New York</a></li>
+                                    <li><a href="javascript:void(0)">San Fransisco</a></li>
+                                    <li><a href="javascript:void(0)">Florida</a></li>
+                                    <li><a href="javascript:void(0)">Washington</a></li>
+                                    <li><a href="javascript:void(0)">Alabama</a></li>
+                                    <li><a href="javascript:void(0)">North Carolina</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-3 col-4">
+                        <div class="categories text-links footer-widget widget">
+                            <h4 class="fourth-heading footer-widget-title">Categories</h4>
+                            <ul>
+                                <li><a href="javascript:void(0)">House</a></li>
+                                <li><a href="javascript:void(0)">Apartments</a></li>
+                                <li><a href="javascript:void(0)">Hotels</a></li>
+                                <li><a href="javascript:void(0)">Office</a></li>
+                                <li><a href="javascript:void(0)">Store</a></li>
+                                <li><a href="javascript:void(0)">Warehouse</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-4">
+                        <div class="about text-links footer-widget widget">
+                            <h4 class="fourth-heading footer-widget-title">About</h4>
+                            <ul>
+                                <li><a href="javascript:void(0)">About us</a></li>
+                                <li><a href="javascript:void(0)">About us</a></li>
+                                <li><a href="javascript:void(0)">Faq</a></li>
+                                <li><a href="javascript:void(0)">Contact</a></li>
+                                <li><a href="javascript:void(0)">Terms & Conditions</a></li>
+                                <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-8 col-12">
+                        <div class="subscribe footer-widget widget mt-3">
+                            <h4 class="fourth-heading footer-widget-title">Subscribe to our newsletter</h4>
+                            <form action="#" method="get" class="footer-widget-form">
+                                <div class="footer-input mb-4">
+                                    <input type="email" name="email" id="email" placeholder="Email">
+                                </div>
+                                <button footer-widget widget class="cmn-btn submit-btn ">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="devider"></div>
+                <div class="copyright-area pt-50 pb-50 d-flex justify-content-between">
+                    <ul class="social-link d-flex">
+                        <li class="me-3"><a href="javascript:void(0)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_265_18612)">
+                            <path d="M14 9.3V12.2H16.6C16.8 12.2 16.9 12.4 16.9 12.6L16.5 14.5C16.5 14.6 16.3 14.7 16.2 14.7H14V22H11V14.8H9.3C9.1 14.8 9 14.7 9 14.5V12.6C9 12.4 9.1 12.3 9.3 12.3H11V9C11 7.3 12.3 6 14 6H16.7C16.9 6 17 6.1 17 6.3V8.7C17 8.9 16.9 9 16.7 9H14.3C14.1 9 14 9.1 14 9.3Z" stroke="#667085" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H15C20 2 22 4 22 9V15C22 20 20 22 15 22Z" stroke="#667085" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_265_18612">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg></a></li>
+                        <li class="me-3"><a href="javascript:void(0)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_265_18613)">
+                            <path d="M17 20H7C4 20 2 18 2 15V9C2 6 4 4 7 4H17C20 4 22 6 22 9V15C22 18 20 20 17 20Z" stroke="#667085" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.4 9.49981L13.9 10.9998C14.8 11.5998 14.8 12.4998 13.9 13.0998L11.4 14.5998C10.4 15.1998 9.59998 14.6998 9.59998 13.5998V10.5998C9.59998 9.29981 10.4 8.89981 11.4 9.49981Z" stroke="#667085" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_265_18613">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg></a></li>
+                        <li><a href="javascript:void(0)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_265_18614)">
+                            <path d="M6.9 20.6C8.4 21.5 10.2 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 13.8 2.5 15.5 3.3 17L2.44044 20.306C2.24572 21.0549 2.93892 21.7317 3.68299 21.5191L6.9 20.6Z" stroke="#667085" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.5 14.8485C16.5 15.0105 16.4639 15.177 16.3873 15.339C16.3107 15.501 16.2116 15.654 16.0809 15.798C15.86 16.041 15.6167 16.2165 15.3418 16.329C15.0714 16.4415 14.7784 16.5 14.4629 16.5C14.0033 16.5 13.512 16.392 12.9937 16.1715C12.4755 15.951 11.9572 15.654 11.4434 15.2805C10.9251 14.9025 10.4339 14.484 9.9652 14.0205C9.501 13.5525 9.08187 13.062 8.70781 12.549C8.33826 12.036 8.04081 11.523 7.82449 11.0145C7.60816 10.5015 7.5 10.011 7.5 9.543C7.5 9.237 7.55408 8.9445 7.66224 8.6745C7.77041 8.4 7.94166 8.148 8.18052 7.923C8.46895 7.6395 8.78443 7.5 9.11793 7.5C9.24412 7.5 9.37031 7.527 9.48297 7.581C9.60015 7.635 9.70381 7.716 9.78493 7.833L10.8305 9.3045C10.9116 9.417 10.9702 9.5205 11.0108 9.6195C11.0513 9.714 11.0739 9.8085 11.0739 9.894C11.0739 10.002 11.0423 10.11 10.9792 10.2135C10.9206 10.317 10.835 10.425 10.7268 10.533L10.3843 10.8885C10.3348 10.938 10.3122 10.9965 10.3122 11.0685C10.3122 11.1045 10.3167 11.136 10.3257 11.172C10.3393 11.208 10.3528 11.235 10.3618 11.262C10.4429 11.4105 10.5826 11.604 10.7809 11.838C10.9837 12.072 11.2 12.3105 11.4344 12.549C11.6778 12.7875 11.9121 13.008 12.151 13.2105C12.3853 13.4085 12.5791 13.5435 12.7323 13.6245C12.7549 13.6335 12.7819 13.647 12.8135 13.6605C12.8495 13.674 12.8856 13.6785 12.9261 13.6785C13.0028 13.6785 13.0613 13.6515 13.1109 13.602L13.4534 13.2645C13.5661 13.152 13.6743 13.0665 13.7779 13.0125C13.8816 12.9495 13.9852 12.918 14.0979 12.918C14.1835 12.918 14.2737 12.936 14.3728 12.9765C14.472 13.017 14.5756 13.0755 14.6883 13.152L16.18 14.2095C16.2972 14.2905 16.3783 14.385 16.4279 14.4975C16.473 14.61 16.5 14.7225 16.5 14.8485Z" stroke="#667085" stroke-miterlimit="10"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_265_18614">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </a></li>
+                    </ul>
+                    <div class="text">&copy 2000-2024, <a href="javascript:void(0)">Xproperty</a> All Right Reserved</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Plugin JS -->
+    <script src="./assets/js/plugin.js"></script>
+     <!--Main JS-->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

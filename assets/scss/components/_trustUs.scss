@@ -1,0 +1,29 @@
+/* trust Part */
+.trust{
+    background: var(--color-2);
+    .second-heading{
+        margin-bottom: 0;
+    }
+    .achivement{
+        display: flex;
+        align-items: center;
+        .img{
+            background: #4d77ff2a;
+            padding: 20px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .text{
+            h5{
+                color: var(--color-11);
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 36px;
+                margin-bottom: 10px;
+            }
+            p{
+                color: var(--color-8);
+            }
+        }
+    }
+}
