@@ -3,9 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>XPROPERTY</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!--Plugin file-->
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <!-- Style Css File -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
+    <header class="white-bg">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container custom-container">      
+                <div class="logo-wraper">
+                    <a href="javascript:void(0)" class="logo">
+                        <img src="./assets/images/xproperties.png" alt="XPROPERTY">
+                    </a>
+                </div>
+                <div class="responsive-mobile-menu ms-auto">
+                    <button class="navbar-toggler bg-w" type="button" data-bs-toggle="collapse" data-bs-target="#listing-menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="javascript:void(0)" class="click-nav-right-icon">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="listing-menu">
+                    <ul class="navbar-nav m-lg-auto text-center mt-5">
+                        <li class="current-menu-item menu-item-has-children">
+                            <a href="./index.html">Home<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="current-menu-item">
+                                    <a href="javascript:void(0)">Home1</a>
+                                </li>
+                                <li class="current-menu-item">
+                                    <a href="javascript:void(0)">Home2</a>
+                                </li>
+                            </ul>
+                        </li>             
+                        <li class="current-menu-item">
+                            <a href="javascript:void(0)">About</a>
+                        </li>
+                        <li class="current-menu-item">
+                            <a href="./single-blog.html">Blogs</a>
+                        </li>
+                        <li class="current-menu-item">
+                            <a href="./get-in-touch.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-right-content">
+                    <div class="single-right-content">
+                        <div class="navbar-right-flex d-flex">
+                            <div class="navbar-right-btn-1">
+                                <a href="./login.html" class="cmn-btn transparent-btn">Login</a>
+                            </div>
+                            <div class="navbar-right-btn-2">
+                                <a href="javascript:(0)" class="cmn-btn fill-btn"><span class="me-2"><i class="fa-solid fa-plus"></i></span>Add Property</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="get-in-touch pb-100">
+        <div class="custom-container">
+            <ul class="bradecrumb">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/">Contact</a></li>
+            </ul>
+            <div class="getintouch-wraper">
+                 <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="getintouch-form-wraper border-box">
+                            <h3 class="third-heading">Get in touch</h3>
+                            <p class="pera my-3">We would love to hear from you!</p>
+                            <form action="#" method="get">
+                                <div class="name-field d-flex gap-4 justify-content-between flex-wrap">
+                                    <div class="fname flex-grow-1">
+                                        <label for="fname" class="custom-label">First name</label>
+                                        <input type="text" id="fname" class="custom-input w-100" placeholder="First name">
+                                    </div>
+                                    <div class="lname flex-grow-1">
+                                        <label for="lname" class="custom-label">Last name</label>
+                                        <input type="text" id="lname" class="custom-input w-100" placeholder="Last name">
+                                    </div>
+                                </div>
+                                <div class="email mt-4">
+                                    <label for="email" class="custom-label">Email</label>
+                                    <input type="text" id="email" class="custom-input w-100" placeholder="you@gmail.com">
+                                </div>
+                                <div class="phone mt-4">
+                                    <label for="phone" class="custom-label">Phone number</label>
+                                    <input type="text" id="phone" class="custom-input w-100" placeholder="01234669789">
+                                </div>
+                                <div class="textarea mt-4">
+                                    <label for="textarea" class="custom-label">Massage</label>
+                                    <textarea type="text" id="textarea" rows="5" class="custom-input w-100" placeholder="Included a massage.."></textarea>
+                                </div>
+                                <div class="send-button mt-4">
+                                    <a href="#/" class="cmn-btn fill-btn">Send Massage</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="office-location border-box">
+                            <div class="location-tabs nav nav-tabs">
+                                <a href="#/" class="tabs active" data-bs-toggle="tab" data-bs-target="#headOffice">Head Office</a>
+                                <a href="#/" class="tabs" data-bs-toggle="tab" data-bs-target="#california">California</a>
+                                <a href="#/" class="tabs" data-bs-toggle="tab" data-bs-target="#dubai">Dubai</a>
+                            </div>
+                            <div class="tab-content">
+                                <div class="location-details tab-pane fade show active" id="headOffice">
+                                    <ul class="contacts">
+                                        <li><img src="./assets/images/call.png" alt=""><span>(629) 555-0129</span></li>
+                                        <li><img src="./assets/images/sms.png" alt=""><span>bill.sanders@example.com</span></li>
+                                        <li><img src="./assets/images/location1.png" alt=""><span>8502 Preston Rd. Inglewood, Maine</span></li>
+                                    </ul>
+                                    <div class="maps mt-4">
+                                        <iframe height="500px" width="100%" src="https://www.openstreetmap.org/export/embed.html?bbox=90.41462659835815%2C23.75569239658194%2C90.45046091079713%2C23.773406105639978&amp;layer=mapnik"></iframe>
+                                    </div>
+                                </div>
+                                <div class="location-details tab-pane fade" id="california">
+                                    <ul class="contacts">
+                                        <li><img src="./assets/images/call.png" alt=""><span>(629) 555-0129</span></li>
+                                        <li><img src="./assets/images/sms.png" alt=""><span>bill.sanders@example.com</span></li>
+                                        <li><img src="./assets/images/location1.png" alt=""><span>8502 Preston Rd. Inglewood, Maine</span></li>
+                                    </ul>
+                                    <div class="maps mt-4">
+                                        <iframe height="500px" width="100%" src="https://www.openstreetmap.org/export/embed.html?bbox=90.41462659835815%2C23.75569239658194%2C90.45046091079713%2C23.773406105639978&amp;layer=mapnik"></iframe>
+                                    </div>
+                                </div>
+                                <div class="location-details tab-pane fade" id="dubai">
+                                    <ul class="contacts">
+                                        <li><img src="./assets/images/call.png" alt=""><span>(629) 555-0129</span></li>
+                                        <li><img src="./assets/images/sms.png" alt=""><span>bill.sanders@example.com</span></li>
+                                        <li><img src="./assets/images/location1.png" alt=""><span>8502 Preston Rd. Inglewood, Maine</span></li>
+                                    </ul>
+                                    <div class="maps mt-4">
+                                        <iframe height="500px" width="100%" src="https://www.openstreetmap.org/export/embed.html?bbox=90.41462659835815%2C23.75569239658194%2C90.45046091079713%2C23.773406105639978&amp;layer=mapnik"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Header -->
+    <!--Footer Part-->
+    <footer class="footer-area pt-50">
+        <div class="custom-container">
+            <div class="footer-area-wraper">
+                <div class="row footer-area-top pb-50">
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-widget widget">
+                           <div class="footer-content-logo">
+                                <a href="javascript:void(0)"><img src="./assets/images/xproperties.png" alt="xproperties"></a>
+                           </div> 
+                           <div class="footer-widget-inner mt-5">
+                                <ul class="ps-2">
+                                    <li class="mb-3"><i class="fa-solid fa-phone"></i><span class="ms-3">(629) 555-0129</span></li>
+                                    <li class="mb-3"><i class="fa-solid fa-envelope"></i><span class="ms-3">bill.sanders@example.com</span></li>
+                                    <li><i class="fa-solid fa-location-dot"></i><span class="ms-3">8502 Preston Rd. Inglewood, Maine</span></li>
+                                </ul>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-3 col-4">
+                        <div class="cities text-links footer-widget widget">
+                            <h4 class="fourth-heading footer-widget-title">Cities</h4>
+                                <ul>
+                                    <li><a href="javascript:void(0)">New York</a></li>
+                                    <li><a href="javascript:void(0)">San Fransisco</a></li>
+                                    <li><a href="javascript:void(0)">Florida</a></li>
+                                    <li><a href="javascript:void(0)">Washington</a></li>
+                                    <li><a href="javascript:void(0)">Alabama</a></li>
+                                    <li><a href="javascript:void(0)">North Carolina</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-3 col-4">
+                        <div class="categories text-links footer-widget widget">
+                            <h4 class="fourth-heading footer-widget-title">Categories</h4>
+                            <ul>
+                                <li><a href="javascript:void(0)">House</a></li>
+                                <li><a href="javascript:void(0)">Apartments</a></li>
+                                <li><a href="javascript:void(0)">Hotels</a></li>
+                                <li><a href="javascript:void(0)">Office</a></li>
+                                <li><a href="javascript:void(0)">Store</a></li>
+                                <li><a href="javascript:void(0)">Warehouse</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-4">
+                        <div class="about text-links footer-widget widget">
+                            <h4 class="fourth-heading footer-widget-title">About</h4>
+                            <ul>
+                                <li><a href="javascript:void(0)">About us</a></li>
+                                <li><a href="javascript:void(0)">About us</a></li>
+                                <li><a href="javascript:void(0)">Faq</a></li>
+                                <li><a href="javascript:void(0)">Contact</a></li>
+                                <li><a href="javascript:void(0)">Terms & Conditions</a></li>
+                                <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-8 col-12">
+                        <div class="subscribe footer-widget widget mt-3">
+                            <h4 class="fourth-heading footer-widget-title">Subscribe to our newsletter</h4>
+                            <form action="#" method="get" class="footer-widget-form">
+                                <div class="footer-input mb-4">
+                                    <input type="email" name="email" id="email" placeholder="Email">
+                                </div>
+                                <button footer-widget widget class="cmn-btn submit-btn ">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="devider"></div>
+                <div class="copyright-area pt-50 pb-50 d-flex justify-content-between">
+                    <ul class="social-link d-flex">
+                        <li class="me-3"><a href="javascript:void(0)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_265_18612)">
+                            <path d="M14 9.3V12.2H16.6C16.8 12.2 16.9 12.4 16.9 12.6L16.5 14.5C16.5 14.6 16.3 14.7 16.2 14.7H14V22H11V14.8H9.3C9.1 14.8 9 14.7 9 14.5V12.6C9 12.4 9.1 12.3 9.3 12.3H11V9C11 7.3 12.3 6 14 6H16.7C16.9 6 17 6.1 17 6.3V8.7C17 8.9 16.9 9 16.7 9H14.3C14.1 9 14 9.1 14 9.3Z" stroke="#667085" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H15C20 2 22 4 22 9V15C22 20 20 22 15 22Z" stroke="#667085" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_265_18612">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg></a></li>
+                        <li class="me-3"><a href="javascript:void(0)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_265_18613)">
+                            <path d="M17 20H7C4 20 2 18 2 15V9C2 6 4 4 7 4H17C20 4 22 6 22 9V15C22 18 20 20 17 20Z" stroke="#667085" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.4 9.49981L13.9 10.9998C14.8 11.5998 14.8 12.4998 13.9 13.0998L11.4 14.5998C10.4 15.1998 9.59998 14.6998 9.59998 13.5998V10.5998C9.59998 9.29981 10.4 8.89981 11.4 9.49981Z" stroke="#667085" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_265_18613">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg></a></li>
+                        <li><a href="javascript:void(0)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_265_18614)">
+                            <path d="M6.9 20.6C8.4 21.5 10.2 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 13.8 2.5 15.5 3.3 17L2.44044 20.306C2.24572 21.0549 2.93892 21.7317 3.68299 21.5191L6.9 20.6Z" stroke="#667085" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.5 14.8485C16.5 15.0105 16.4639 15.177 16.3873 15.339C16.3107 15.501 16.2116 15.654 16.0809 15.798C15.86 16.041 15.6167 16.2165 15.3418 16.329C15.0714 16.4415 14.7784 16.5 14.4629 16.5C14.0033 16.5 13.512 16.392 12.9937 16.1715C12.4755 15.951 11.9572 15.654 11.4434 15.2805C10.9251 14.9025 10.4339 14.484 9.9652 14.0205C9.501 13.5525 9.08187 13.062 8.70781 12.549C8.33826 12.036 8.04081 11.523 7.82449 11.0145C7.60816 10.5015 7.5 10.011 7.5 9.543C7.5 9.237 7.55408 8.9445 7.66224 8.6745C7.77041 8.4 7.94166 8.148 8.18052 7.923C8.46895 7.6395 8.78443 7.5 9.11793 7.5C9.24412 7.5 9.37031 7.527 9.48297 7.581C9.60015 7.635 9.70381 7.716 9.78493 7.833L10.8305 9.3045C10.9116 9.417 10.9702 9.5205 11.0108 9.6195C11.0513 9.714 11.0739 9.8085 11.0739 9.894C11.0739 10.002 11.0423 10.11 10.9792 10.2135C10.9206 10.317 10.835 10.425 10.7268 10.533L10.3843 10.8885C10.3348 10.938 10.3122 10.9965 10.3122 11.0685C10.3122 11.1045 10.3167 11.136 10.3257 11.172C10.3393 11.208 10.3528 11.235 10.3618 11.262C10.4429 11.4105 10.5826 11.604 10.7809 11.838C10.9837 12.072 11.2 12.3105 11.4344 12.549C11.6778 12.7875 11.9121 13.008 12.151 13.2105C12.3853 13.4085 12.5791 13.5435 12.7323 13.6245C12.7549 13.6335 12.7819 13.647 12.8135 13.6605C12.8495 13.674 12.8856 13.6785 12.9261 13.6785C13.0028 13.6785 13.0613 13.6515 13.1109 13.602L13.4534 13.2645C13.5661 13.152 13.6743 13.0665 13.7779 13.0125C13.8816 12.9495 13.9852 12.918 14.0979 12.918C14.1835 12.918 14.2737 12.936 14.3728 12.9765C14.472 13.017 14.5756 13.0755 14.6883 13.152L16.18 14.2095C16.2972 14.2905 16.3783 14.385 16.4279 14.4975C16.473 14.61 16.5 14.7225 16.5 14.8485Z" stroke="#667085" stroke-miterlimit="10"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_265_18614">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </a></li>
+                    </ul>
+                    <div class="text">&copy 2000-2024, <a href="javascript:void(0)">Xproperty</a> All Right Reserved</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!-- Plugin JS -->
+     <script src="./assets/js/plugin.js"></script>
+     <!--Main JS-->
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
