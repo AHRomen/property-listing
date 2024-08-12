@@ -1,0 +1,103 @@
+@media only screen and (max-width: 1699.97px) {
+    .container-wraper-02 {
+      max-width: 1320px;
+    }
+}
+@media only screen and (max-width: 1549.98px) {
+    .custom-container {
+        max-width: 1320px;
+    }
+}
+@media only screen and (max-width: 1399.98px) {
+    .custom-container {
+        max-width: 1140px;
+    }
+    /*heading*/
+    .main-heading {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .second-heading {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .third-heading {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .fourth-heading {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    /* Bannar */
+    .banner-para {
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 810px;
+    }
+    .search-porperty .filter-form {
+        -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width: 1199.98px) {
+    .custom-container {
+        max-width: 960px;
+    }
+}
+@media only screen and (max-width: 991.98px) {
+    .custom-container {
+        max-width: 720px;
+    }
+    /* Trust */
+    .trust .second-heading {
+        margin-bottom: 60px;
+    }
+}
+@media only screen and (max-width: 767.98px) {
+    .custom-container {
+        max-width: 540px;
+    }
+    /*Heading*/
+    .main-heading {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    /* Bannar */
+    .banner-para {
+        font-size: 15px;
+        line-height: 22px;
+        max-width: 600px;
+    }
+}
+@media only screen and (max-width: 575.98px) {
+    .custom-container {
+        max-width: 100%;
+    }
+    /* heading */
+    .second-heading {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    /* Banner */
+    .banner {
+        padding-top: 145px;
+    }
+}
+@media only screen and (max-width: 425.98px) {
+    /*heading*/
+    .main-heading {
+      font-size: 23px;
+      line-height: 30px;
+    }
+    /* Trust */
+    .trust .second-heading {
+        margin-bottom: 35px;
+    }
+  }
+@media only screen and (max-width: 375.98px) {
+    .search-porperty .filter-form {
+        -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    }
+}

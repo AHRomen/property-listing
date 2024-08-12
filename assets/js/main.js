@@ -1,6 +1,13 @@
 (function ($) {
     "use strict";
     jQuery(document).ready(function ($) {
+        /* Navbar button */
+        $(document).on('click', '.click-nav-right-icon', function(){
+            $(".navbar-right-content").toggleClass("show-nav-content");
+        });
+        $(document).on('click', '.click-nav-left-icon', function(){
+            $(".navbar-left-content").toggleClass("show-nav-content");
+        });
        //Select2 dropedown
        $('.location-0').select2({
         placeholder: "Location"
@@ -50,7 +57,7 @@
                     var fade = typeof allData.fade == 'undefined' ? false : allData.fade;
                     var rtl = typeof allData.rtl == 'undefined' ? false : allData.rtl;
                     var responsive = typeof $(this).data('responsive') == 'undefined' ? false : $(this).data('responsive');
-
+                    console.log($(this).data('responsive'));
                     //slider settings object setup
                     sliderSettings.infinite = infinite;
                     sliderSettings.arrows = arrows;
@@ -96,6 +103,7 @@
                         sliderSettings.responsive = responsive;
                     }
                     $(this).slick(sliderSettings);
+                    console.log(sliderSettings);
                 }
             });
         }

@@ -475,6 +475,168 @@ textarea {
   font-size: 16px;
 }
 
+.navbar-right-content .navbar-right-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navbar-right-content .navbar-right-flex .navbar-right-btn-1 a {
+  background: transparent;
+  border: 1px solid var(--color-17);
+  color: var(--color-17);
+  padding: 12px 30px;
+  margin-right: 20px;
+}
+.navbar-right-content .navbar-right-flex .navbar-right-btn-2 a {
+  background: var(--color-15);
+}
+@media only screen and (max-width: 991.98px) {
+  .navbar-right-content {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: rgba(206, 246, 247, 0.7411764706);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    top: 100%;
+    right: 0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: all ease-in 0.5s;
+    transition: all ease-in 0.5s;
+  }
+}
+@media only screen and (max-width: 991.98px) and (max-width: 575.98px) {
+  .navbar-right-content {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .navbar-right-content.show-nav-content {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/*navbar collapse buttons*/
+.responsive-mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.responsive-mobile-menu .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+@media only screen and (max-width: 375.98px) {
+  .responsive-mobile-menu .navbar-toggler {
+    padding: 2px 5px;
+  }
+}
+.responsive-mobile-menu .navbar-toggler .navbar-toggler-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2px;
+  width: 22px;
+  background: var(--color-11);
+  position: relative;
+}
+.responsive-mobile-menu .navbar-toggler .navbar-toggler-icons::after, .responsive-mobile-menu .navbar-toggler .navbar-toggler-icons::before {
+  content: "";
+  height: 2px;
+  width: 22px;
+  background: inherit;
+  position: absolute;
+}
+.responsive-mobile-menu .navbar-toggler .navbar-toggler-icons::after {
+  top: 7px;
+}
+.responsive-mobile-menu .navbar-toggler .navbar-toggler-icons::before {
+  bottom: 7px;
+}
+.responsive-mobile-menu .click-nav-left-icon {
+  font-size: 16px;
+  color: var(--color-15);
+  border: 1px solid var(--color-15);
+  border-radius: 50%;
+  margin-left: 20px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
+}
+@media only screen and (max-width: 1450px) {
+  .responsive-mobile-menu .click-nav-left-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .responsive-mobile-menu .click-nav-left-icon {
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+  }
+}
+.responsive-mobile-menu .click-nav-right-icon {
+  display: none;
+  font-size: 16px;
+  color: var(--color-11);
+  border: 1px solid var(--color-11);
+  border-radius: 50%;
+  margin-left: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+}
+@media only screen and (max-width: 991.98px) {
+  .responsive-mobile-menu .click-nav-right-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 375.98px) {
+  .responsive-mobile-menu .click-nav-right-icon {
+    margin-left: 10px;
+  }
+}
+
 .banner {
   padding-top: 70px;
 }
