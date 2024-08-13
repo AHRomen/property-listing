@@ -60,6 +60,10 @@
         }
     }
     .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 250px;
         border-radius: 12px;
         box-shadow: 0px 3px 16px 0px #10182814;
         .text{

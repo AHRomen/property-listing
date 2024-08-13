@@ -1,0 +1,40 @@
+.user-sidebar-left-menu-wraper {
+    padding-top: 30px;
+    width: 385px;
+    border-right: 1px solid #EAECF0;
+}
+.user-sidebar-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    li a{
+        padding: 10px 50px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        line-height: 1;
+        font-family: var(--heading-font-1);
+        color: var(--color-6);
+        transition: all .5s linear;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            border-radius: 12px 0 0 12px;
+        }
+        &.active{
+            color: var(--color-15);
+            background: #FFF7F5;
+            svg path{
+                fill: var(--color-15);
+            }
+            &::after {
+                background-color: var(--color-15);
+            }
+        }
+    }
+}

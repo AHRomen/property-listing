@@ -7,11 +7,11 @@
     .achivement{
         display: flex;
         align-items: center;
+        gap: 20px;
         .img{
             background: #4d77ff2a;
             padding: 20px;
             border-radius: 50%;
-            margin-right: 20px;
         }
         .text{
             h5{

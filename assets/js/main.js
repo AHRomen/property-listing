@@ -57,7 +57,6 @@
                     var fade = typeof allData.fade == 'undefined' ? false : allData.fade;
                     var rtl = typeof allData.rtl == 'undefined' ? false : allData.rtl;
                     var responsive = typeof $(this).data('responsive') == 'undefined' ? false : $(this).data('responsive');
-                    console.log($(this).data('responsive'));
                     //slider settings object setup
                     sliderSettings.infinite = infinite;
                     sliderSettings.arrows = arrows;

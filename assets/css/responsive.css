@@ -39,10 +39,26 @@
         -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
     }
+    /* Trust part */
+    .trust .achivement .text h5 {
+        font-size: 24px;
+    }
 }
 @media only screen and (max-width: 1199.98px) {
     .custom-container {
         max-width: 960px;
+    }
+    /*Featured card*/
+    .single-card .body .foot .bath {
+        padding: 0 8px;
+        margin: 0 8px;
+    }
+    /* Trust part */
+    .trust .achivement .img {
+        padding: 14px;
+    }
+    .trust .achivement .img img {
+        width: 30px;
     }
 }
 @media only screen and (max-width: 991.98px) {
@@ -53,21 +69,59 @@
     .trust .second-heading {
         margin-bottom: 60px;
     }
+    .trust .achivement .img {
+        padding: 12px;
+    }
 }
 @media only screen and (max-width: 767.98px) {
     .custom-container {
         max-width: 540px;
+    }
+    /* Button */
+    .slider-arrow {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 6px 12px;
+    }
+    .reviews .slick-dots {
+        display: none !important;
     }
     /*Heading*/
     .main-heading {
         font-size: 32px;
         line-height: 40px;
     }
+    .slick-list .slick-slide {
+        margin: 0 12px;
+    }
     /* Bannar */
     .banner-para {
         font-size: 15px;
         line-height: 22px;
         max-width: 600px;
+    }
+    /* Trust */
+    .trust .achivement {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    /* Reviews */
+    .review-item .review .slider_body .rating ul {
+        margin-bottom: 10px;
+    }
+    .review-item .review .slider_body .rating ul li i{
+        font-size: 16px;
+    }
+    .review-item .review .slider_body .review_name .name {
+        font-size: 18px;
+    }
+    /* Find */
+    .find-property .mb-60{
+        margin-bottom: 15px;
+    }
+    .find-property .find p {
+        margin: 14px 0 24px 0;
     }
 }
 @media only screen and (max-width: 575.98px) {
@@ -82,6 +136,13 @@
     /* Banner */
     .banner {
         padding-top: 145px;
+    }
+    /* Reviews */
+    .review-item .review .slider_body .review_text {
+        margin-bottom: 14px;
+    }
+    .reviews .r-slide .arrow-icon3 {
+        bottom: 22px;
     }
 }
 @media only screen and (max-width: 425.98px) {
