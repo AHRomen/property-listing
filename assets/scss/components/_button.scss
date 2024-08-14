@@ -6,6 +6,21 @@
     transition: all .5s linear;
     text-align: center;
 }
+.cmn-small-btn {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-family: var(--heading-font-1);
+    transition: all .5s linear;
+}
+.delete-btn {
+    border-color: #EAECF0;
+    color: var(--color-6);
+}
+.edit-btn {
+    color: var(--color-1);
+    background: var(--color-15);
+}
 .transparent-btn {
     border-color: var(--color-17);
     color: var(--color-17);

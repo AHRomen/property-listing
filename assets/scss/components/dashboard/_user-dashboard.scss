@@ -1,6 +1,11 @@
+.user-dashboard-content-wraper {
+    display: flex;
+    gap: 30px;
+}
 .user-sidebar-left-menu-wraper {
-    padding-top: 30px;
     width: 385px;
+    height: calc(100vh - 120px);
+    padding-top: 30px;
     border-right: 1px solid #EAECF0;
 }
 .user-sidebar-menu-list {
@@ -35,6 +40,65 @@
             &::after {
                 background-color: var(--color-15);
             }
+        }
+    }
+}
+.user-right-part-content-wraper {
+    display: flex;
+    gap: 30px;  
+    padding-top: 30px;
+}
+.main-content-wraper {
+    width: 800px;
+}
+.my-single-properties-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/*Card for my porperties*/
+.my-single-properties {
+    display: flex;
+    width: 100%;
+    .img {
+        max-width: 256px;
+        position: relative;
+        .ribbon-wraper {
+            position: absolute;
+            top: 20px;
+            left: -8px;
+        }
+    }
+    .img img{
+        width: 100%;
+        border-radius: 12px 0 0 12px;
+    }
+    .body-text {
+        flex: 1;
+        padding: 30px;
+        border: 1px solid #EAECF0;
+        border-radius: 0 12px 12px 0;
+        .heading {
+            color: var(--color-11);
+            font-size: 24px;
+            line-height: 1.2;
+        }
+        .address {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .price {
+            color: var(--color-15);
+        }
+        .devider {
+            margin: 20px 0;
+        }
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
         }
     }
 }

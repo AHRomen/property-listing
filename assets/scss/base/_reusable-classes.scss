@@ -131,3 +131,29 @@ textarea {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+/*ribbon*/
+.ribbon {
+    display: inline-block;
+    position: relative;
+    .text{
+        padding: 5px 10px;
+        background: #8A39E1;
+        border-radius: 6px 0 6px 0;
+        color: #fff;
+        font-size: 14px;
+    }
+    .svg {
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        z-index: -1;
+    }
+    &.rent {
+        .text{
+            background: var(--color-15);
+        }
+        .svg path {
+            fill: var(--color-15);
+        }
+    }
+}
