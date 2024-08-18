@@ -2,10 +2,25 @@
     .container-wraper-02 {
       max-width: 1320px;
     }
+    /* Dashboard Css */
+    .second-nav .logo-wraper {
+        width: 280px;
+    }
+    .user-sidebar-left-menu-wraper {
+        width: 280px;
+    }
 }
 @media only screen and (max-width: 1549.98px) {
     .custom-container {
         max-width: 1320px;
+    }
+    /* Dashboard Css */
+    .user-right-part-content {
+        flex-direction: column;
+    }
+    .advertisement-wraper {
+        max-width: 100%;
+        flex-direction: row;
     }
 }
 @media only screen and (max-width: 1399.98px) {
@@ -60,6 +75,10 @@
     .trust .achivement .img img {
         width: 30px;
     }
+    /* Dashboard Css */
+    .main-content-wraper {
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 991.98px) {
     .custom-container {
@@ -71,6 +90,21 @@
     }
     .trust .achivement .img {
         padding: 12px;
+    }
+    /* Dashboard Css */
+    .my-single-properties {
+        flex-direction: column;
+        .img {
+            max-width: 100%;
+            max-height: 300px;
+            overflow-y: clip;
+            img {
+                border-radius: 12px 12px 0 0;
+            }
+        }
+        .body-text {
+            border-radius: 0 0 12px 12px;
+        }
     }
 }
 @media only screen and (max-width: 767.98px) {
@@ -122,6 +156,37 @@
     }
     .find-property .find p {
         margin: 14px 0 24px 0;
+    }
+    /* Dashbord Css */
+    .second-nav .logo-wraper {
+        max-width: 150px;
+        border-right: 0;
+        img{
+            width: 100%;
+        }
+    }
+    .user-sidebar-left-menu-wraper {
+        position: absolute;
+        left: -150%;
+        top: 54px;
+        z-index: 999;
+        background: #fff;
+        box-shadow: 0 4px 24px #00000047;
+        border-radius: 8px;
+        transition: all .5s linear;
+        height: 100%;
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
+        &.show {
+            left: 0px;
+        }
+    }
+    .user-right-part-content-wraper {
+        border-left: none ;
+    }
+    .user-right-part-content {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 @media only screen and (max-width: 575.98px) {

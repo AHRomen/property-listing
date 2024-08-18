@@ -8,6 +8,9 @@
         $(document).on('click', '.click-nav-left-icon', function(){
             $(".navbar-left-content").toggleClass("show-nav-content");
         });
+        $(document).on('click', '.dashbord-toggle-icon', function(){
+            $(".user-sidebar-left-menu-wraper").toggleClass("show");
+        });
        //Select2 dropedown
        $('.location-0').select2({
         placeholder: "Location"

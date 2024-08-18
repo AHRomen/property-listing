@@ -1,17 +1,18 @@
 .user-dashboard-content-wraper {
     display: flex;
-    gap: 30px;
+    position: relative;
 }
 .user-sidebar-left-menu-wraper {
     width: 385px;
-    height: calc(100vh - 120px);
     padding-top: 30px;
-    border-right: 1px solid #EAECF0;
+    flex-shrink: 0;
 }
 .user-sidebar-menu-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: sticky;
+    top: 20px;
     li a{
         padding: 10px 50px;
         display: flex;
@@ -44,12 +45,23 @@
     }
 }
 .user-right-part-content-wraper {
+    border-left: 1px solid #EAECF0;
+}
+.user-right-part-content {
     display: flex;
     gap: 30px;  
     padding-top: 30px;
+    padding-left: 30px;
 }
 .main-content-wraper {
     width: 800px;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    height: 100%;
 }
 .my-single-properties-wraper {
     display: flex;
@@ -71,6 +83,7 @@
     }
     .img img{
         width: 100%;
+        height: 100%;
         border-radius: 12px 0 0 12px;
     }
     .body-text {
@@ -101,4 +114,75 @@
             gap: 10px;
         }
     }
+}
+// Advertisement 
+.advertisement-wraper {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .add-one {
+        flex: 1;
+        max-width: 390px;
+        min-width: 280px;
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            width: 70px;
+            background: var(--color-15);
+            border-radius: 50%;
+        }
+        .pera {
+            margin: 26px 0;
+        }
+        .membership-price {
+            font-weight: 600;
+            font-family: var(--heading-font-1);
+            font-size: 24px;
+            color: var(--color-11)
+        }
+        .cradits {
+            color: #475467;
+            margin: 16px 0 30px 0;
+        }
+        .check-features {
+            text-decoration: underline;
+            color: var(--color-15);
+            margin-bottom: 20px;
+        }
+    }
+    .add-two {
+        max-width: 390px;
+        min-width: 280px;
+        flex: 1;
+        border-radius: 12px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        padding: 24px;
+        .text {
+            max-width: 190px;
+            .rent-office{
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 1.3;
+                color: var(--color-11);
+            }
+            .pera {
+                margin: 10px 0 80px 0;
+            }
+        }
+    }
+}
+.user-right-part-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 30px;
+    border-top: 1px solid var(--color-4);
+    font-size: 14px;
 }
