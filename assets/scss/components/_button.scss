@@ -21,6 +21,14 @@
     color: var(--color-1);
     background: var(--color-15);
 }
+.accept-btn {
+    color: #fff;
+    background: var(--color-14);
+}
+.reject-btn {
+    color: #98A2B3;
+    border-color: var(--color-4);
+}
 .transparent-btn {
     border-color: var(--color-17);
     color: var(--color-17);
@@ -73,6 +81,7 @@
         }
     }
 }
+// Tags
 .tagGroup {
     display: flex;
     gap: 10px;
@@ -100,4 +109,21 @@
 .tag3 {
     background: #EAECF0;
     color: #8A39E1;
+}
+// Badge
+.badge {
+    font-size: 14px;
+    font-family: var(--heading-font-1);
+    font-weight: 400;
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+.badge-purple {
+    color: #8A39E1;
+    background: rgba(138, 57, 225, 0.12 );
+}
+.badge-red {
+    color: var(--color-15);
+    background: rgba(247, 102, 49, 0.12);
 }

@@ -1,0 +1,81 @@
+// Schedual Dashbord
+.my-schedual-visit-wraper {
+    .visit-btn-wraper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        border-bottom: 1px solid var(--color-4);
+        a{
+            font-family: var(--heading-font-1);
+            padding-bottom: 16px;
+            position: relative;
+            transition: all 0.5s;
+            &::after {
+                content: "";
+                position: absolute;
+                height: 4px;
+                width: 40px;
+                background: transparent;
+                border-radius: 20px 20px 0 0;
+                bottom: 0;
+                left: 0;
+            }
+            &.active {
+                color: var(--color-15);
+                &::after{
+                    background: var(--color-15);
+                }
+            }
+        }
+    }
+    .visit-content-wraper {
+        display: flex;
+        gap: 20px;
+    }
+}
+.single-visit {
+    font-family: var(--heading-font-1);
+    .img {
+        height: 52px;
+        height: 52px;
+    }
+    .content-part{
+        .pera {
+            color: #667085;
+            span {
+                font-weight: 600;
+                color: var(--color-11);
+            }
+        }
+        .date-time {
+            border: 1px solid var(--color-4);
+            border-radius: 8px;
+            padding: 12px;
+            width: fit-content;
+            line-height: 1;
+            margin: 20px 0;
+        }
+        .propertyAddress {
+            .name {
+                font-family: var(--heading-font-1);
+                font-weight: 500;
+                color: var(--color-11);
+                font-size: 24px;
+            }
+            .address .date{
+                color: var(--color-15);
+            }
+            .price {
+                font-weight: 600;
+                font-size: 20px;
+                color: var(--color-15);
+                margin-top: 20px;
+            }
+        }
+        .accpet-reject {
+            border-top: 1px solid var(--color-4);
+            margin-top: 20px;
+            padding-top: 30px;
+        }
+    }
+}
