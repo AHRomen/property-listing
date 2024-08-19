@@ -127,3 +127,31 @@
     color: var(--color-15);
     background: rgba(247, 102, 49, 0.12);
 }
+//Toggle Btn
+.toggole-btn {
+    display: inline-block;
+    height: 24px;
+    width: 44px;
+    border-radius: 12px;
+    background: var(--color-4);
+    transition: all .3s linear;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: #fff;
+        top: 2px;
+        left: 2px;
+        transition: all .3s linear;
+    }
+    &.active {
+        background: var(--color-15);
+        &::after {
+            left: auto;
+            right: 2px;
+        }
+    }
+}

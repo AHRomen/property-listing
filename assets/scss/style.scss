@@ -21,9 +21,14 @@
 @import "./components/get-in-touch";
 @import "./components/login";
 @import "./components/blog-page/blog-page";
+//Pages
+@import "./components/pages/property-details";
 //User dashboard
 @import "./components/dashboard/user-dashboard";
 @import "./components/dashboard/shcedual";
 @import "./components/dashboard/user-favourites";
+@import "./components/dashboard/my-reviews";
+@import "./components/dashboard/user-billing";
+@import "./components/dashboard/user-setting";
 // Layout Navigation
 @import "./layout/footer";

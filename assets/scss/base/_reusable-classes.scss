@@ -181,3 +181,18 @@ textarea {
         background: var(--color-4);
     }
 }
+.check-features {
+    color: var(--color-15);
+    text-decoration: underline;
+}
+.verified-icon {
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background: #05BE70;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

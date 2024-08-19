@@ -1,0 +1,34 @@
+.my-reviews-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.single-my-review {
+    font-family: var(--heading-font-1);
+    .reviewTo {
+        font-family: var(--heading-font-1);
+        color: var(--color-11);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.3;
+        margin-bottom: 30px;
+    }
+    .reviewProperty {
+        .img{
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+    }
+    .review-wraper {
+        .review-text {
+            padding: 20px;
+            border: 1px solid var(--color-4);
+            border-radius: 8px;
+            background: #F9FAFB;
+            color: #667085;
+        }
+    }
+}

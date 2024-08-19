@@ -1,0 +1,103 @@
+.property-details {
+    .property-head {
+        margin-bottom: 30px;
+        .property-name {
+            font-family: var(--heading-font);
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            color: var(--color-11);
+        }
+        .published {
+            color: var(--color-15);
+        }
+    }
+    .property-description-wraper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .price {
+            font-size: 30px;
+            font-weight: 600;
+            font-family: var(--heading-font-1);
+            color: var(--color-15);
+        }
+        .main-features, .another-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            color: var(--color-11);
+            font-family: var(--heading-font-1);
+            .feature {
+                display: flex;
+                gap: 4px;
+                align-items: center;
+                .icon svg, .icon img{
+                    height: 18px;
+                    width: 18px;
+                }
+            }
+            .feature:not(:last-child) {
+                padding-right: 20px;
+                border-right: 1px solid var(--color-4);
+            }
+        }
+        .third-heading{
+            margin-bottom: 20px;
+        }
+    }
+}
+.single-reviews-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .single-property-review:not(:last-child) {
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--color-4);
+    }
+}
+.single-property-review {
+    .reviewProperty {
+        display: flex;
+        gap: 10px;
+        .img{
+            height: 60px;
+            width: 60px;
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        .text {
+            .name {
+                font-family: var(--heading-font-1);
+                color: var(--color-11);
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            .date {
+                font-size: 14px;
+            }
+        }
+    }
+    .review-wraper {
+        .reviews-icon{
+            margin: 30px 0;
+            display: flex;
+            gap: 10px;
+            i {
+                color: var(--color-21);
+                font-size: 20px;
+            }
+        }
+        .review-text {
+            color: #667085;
+            p + p {
+                margin-top: 20px;
+            } 
+        }
+    }
+}

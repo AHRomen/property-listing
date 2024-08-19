@@ -1,8 +1,10 @@
+//User Favourites
 .my-favourites-properties-wraper {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+//Favourites cards
 .single-favourites {
     font-family: var(--heading-font-1);
     display: flex;
