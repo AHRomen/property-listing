@@ -13,6 +13,39 @@
             color: var(--color-15);
         }
     }
+    .property-imges {
+        .display-image-wraper {
+            .main-img{
+                height: 410px;
+                max-width: 100%;
+                border-radius: 12px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 12px;
+                }
+            }
+        }
+        .short-image-wraper {
+            display: flex;
+            margin-bottom: 30px;
+            gap: 20px;
+            flex-wrap: wrap;
+            .sub-img {
+                height: 82px;
+                width: 82px;
+                border-radius: 8px;
+                padding: 2px;
+                border: 1px solid var(--color-15);
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
     .property-description-wraper {
         display: flex;
         flex-direction: column;
@@ -99,5 +132,45 @@
                 margin-top: 20px;
             } 
         }
+    }
+}
+.property-details-widget-wraper {
+    .property-owner {
+        position: relative;
+        .img {
+            max-width: 72px;
+            max-height: 72px;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .text {
+            font-family: var(--heading-font-1);
+            color: #667085;
+            font-size: 14px;
+            .name {
+                font-weight: 500;
+                color: var(--color-11);
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        .verified-icon {
+            position: absolute;
+            top: 50%;
+            right: 24px;
+            transform: translateY(-50%);
+        }
+    }
+    .contact-details {
+        font-family: var(--heading-font-1);
+        color: var(--color-11);
+    }
+    .tranding-property-head {
+        color: #000000;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: var(--heading-font-1);
     }
 }

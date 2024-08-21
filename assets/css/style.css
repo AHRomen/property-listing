@@ -1821,6 +1821,39 @@ textarea {
 .property-details .property-head .published {
   color: var(--color-15);
 }
+.property-details .property-imges .display-image-wraper .main-img {
+  height: 410px;
+  max-width: 100%;
+  border-radius: 12px;
+}
+.property-details .property-imges .display-image-wraper .main-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+.property-details .property-imges .short-image-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.property-details .property-imges .short-image-wraper .sub-img {
+  height: 82px;
+  width: 82px;
+  border-radius: 8px;
+  padding: 2px;
+  border: 1px solid var(--color-15);
+}
+.property-details .property-imges .short-image-wraper .sub-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
 .property-details .property-description-wraper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1924,6 +1957,46 @@ textarea {
 }
 .single-property-review .review-wraper .review-text p + p {
   margin-top: 20px;
+}
+
+.property-details-widget-wraper .property-owner {
+  position: relative;
+}
+.property-details-widget-wraper .property-owner .img {
+  max-width: 72px;
+  max-height: 72px;
+}
+.property-details-widget-wraper .property-owner .img img {
+  height: 100%;
+  width: 100%;
+}
+.property-details-widget-wraper .property-owner .text {
+  font-family: var(--heading-font-1);
+  color: #667085;
+  font-size: 14px;
+}
+.property-details-widget-wraper .property-owner .text .name {
+  font-weight: 500;
+  color: var(--color-11);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.property-details-widget-wraper .property-owner .verified-icon {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.property-details-widget-wraper .contact-details {
+  font-family: var(--heading-font-1);
+  color: var(--color-11);
+}
+.property-details-widget-wraper .tranding-property-head {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: var(--heading-font-1);
 }
 
 .user-dashboard-content-wraper {

@@ -59,6 +59,7 @@
                     var vertical = typeof allData.vertical == 'undefined' ? false : allData.vertical;
                     var fade = typeof allData.fade == 'undefined' ? false : allData.fade;
                     var rtl = typeof allData.rtl == 'undefined' ? false : allData.rtl;
+                    var variableWidth = typeof allData.variablewidth == 'undefined' ? false : allData.variablewidth;
                     var responsive = typeof $(this).data('responsive') == 'undefined' ? false : $(this).data('responsive');
                     //slider settings object setup
                     sliderSettings.infinite = infinite;
@@ -78,6 +79,7 @@
                     sliderSettings.autoplay = autoplay;
                     sliderSettings.verticalSwiping = verticalSwiping;
                     sliderSettings.vertical = vertical;
+                    sliderSettings.variableWidth = variableWidth;
                     sliderSettings.rtl = rtl;
 
                     if (centerMode != false) {
