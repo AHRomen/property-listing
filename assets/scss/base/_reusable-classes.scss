@@ -196,3 +196,24 @@ textarea {
     justify-content: center;
     align-items: center;
 }
+// NoUi slider design
+.noUi-target {
+    height: 8px;
+    border-radius: 4px;
+    background: var(--color-4);
+    border: none;
+}
+.noUi-horizontal .noUi-handle {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 2px solid var(--color-15);
+    background: #fff;
+    top: -8px;
+}
+.noUi-connect {
+    background: var(--color-15);
+}
+.noUi-handle:after, .noUi-handle:before {
+    display: none;
+}

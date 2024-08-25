@@ -68,6 +68,9 @@
         box-shadow: 0px 3px 16px 0px #10182814;
         .text{
             padding:20px 0 20px 20px;
+            .third-heading a {
+                color: var(--color-11);
+            }
             p{
                 margin: 10px 0 20px 0;
                 color: var(--color-8);

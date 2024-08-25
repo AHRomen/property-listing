@@ -11,6 +11,9 @@
         $(document).on('click', '.dashbord-toggle-icon', function(){
             $(".user-sidebar-left-menu-wraper").toggleClass("show");
         });
+        $(document).on('click', '.profile-part', function(){
+            $(".profile-item").toggleClass("show");
+        });
        //Select2 dropedown
        $('.location-0').select2({
         placeholder: "Location"
@@ -20,6 +23,21 @@
       });
       $('.price-range-0').select2({
         placeholder: "Price Range"
+      });
+      $('.filter-widget.filter-location').select2({
+        
+      });
+      $('.filter-widget.bed').select2({
+        
+      });
+      $('.filter-widget.bath').select2({
+        
+      });
+      $('.filter-widget.area').select2({
+        
+      });
+      $('.filter-widget.property-categories').select2({
+        
       });
     });
 
@@ -107,8 +125,44 @@
                         sliderSettings.responsive = responsive;
                     }
                     $(this).slick(sliderSettings);
-                    console.log(sliderSettings);
                 }
             });
         }
+
+    /*-----------------------------------
+        price range slider control
+    -----------------------------------*/
+    var stepsSlider = document.getElementById('price-range-bar');
+    var input0 = document.getElementById('min-price');
+    var input1 = document.getElementById('max-price');
+    var inputs = [input0, input1];
+
+    noUiSlider.create(stepsSlider, {
+        start: [20, 80],
+        connect: true,
+        // tooltips: [true, wNumb({decimals: 1})],
+        range: {
+            'min': [0],
+            '10%': [10, 10],
+            '50%': [80, 50],
+            '80%': 150,
+            'max': 200
+        }
+    });
+    stepsSlider.noUiSlider.on('update', function (values, handle) {
+        inputs[handle].value = values[handle];
+    });
+
+    /*-----------------------------------
+      All Listing Filter open and hide
+    ----------------------------------*/
+    $(document).on('click', '.filter-btn', function(){
+        $(".filter-widget-wraper, .black-shadow").toggleClass("show");
+    });
+    $(document).on('click', '.filter-head .close-icon', function(){
+        $(".filter-widget-wraper").removeClass("show");
+        $(".black-shadow").toggleClass("show");
+    });
+
+
 }(jQuery));

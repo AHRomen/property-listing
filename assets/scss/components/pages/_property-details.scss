@@ -27,11 +27,14 @@
                 }
             }
         }
-        .short-image-wraper {
+        .thumb-image-wraper {
             display: flex;
             margin-bottom: 30px;
             gap: 20px;
             flex-wrap: wrap;
+            .slick-active {
+                // opacity: 1 !important;
+            }
             .sub-img {
                 height: 82px;
                 width: 82px;

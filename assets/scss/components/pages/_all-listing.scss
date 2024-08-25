@@ -1,0 +1,152 @@
+//All Listing
+.black-shadow {
+    position: fixed;
+    inset: 0;
+    background: #00000084;
+    z-index: 1000;
+    right: 100%;
+    &.show {
+        right: 0;
+    }
+}
+.filter-widget-wraper {
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    overflow-y: auto;
+    background:#F9FAFB;
+    border: 1px solid var(--color-4);
+    z-index: 1000;
+    width: 380px;
+    font-family: var(--heading-font-1);
+    transition: all .5s ease;
+    &.show {
+        left: 0;
+    }
+    .filter-head {
+        position: sticky;
+        top: 0;
+        background: #ffffff;
+        padding: 30px;
+        border-bottom: 1px solid var(--color-4);
+        z-index: 1000;
+        .name {
+            color: var(--color-11);
+        }
+        .close-icon {
+            padding: 8px;
+            color: var(--color-15);
+            cursor: pointer;
+        }
+    }
+    .filter-body {
+        padding: 30px;
+        .for-sell-rent a {
+            flex: 1;     
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            color: var(--color-8);
+            &.select{
+                background: var(--color-15);
+                color: #fff;
+            }                  
+        }
+        .bed-bath {
+            width: 100%;
+            .bath-wraper, .bed-wraper {
+                flex: 1;
+            }
+        }
+        .property-category-wraper {
+            .select2 .select2-selection--single .select2-selection__rendered {
+                padding-left: 0;
+            }
+        }
+        .price-range {
+            .min-max {
+                .min, .max {
+                    flex: 1;
+                }
+            }
+            .input-wraper {
+                position: relative;
+                input {
+                    padding-left: 30px;
+                }
+                &::before {
+                    position: absolute;
+                    content: url(../images/dollar-circle.png);
+                    top: calc(50% + 2px);
+                    left: 8px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    .custom-label {
+        font-size: 16px;
+        color: var(--color-11);
+    }
+    .custom-input {
+        color: #667085;
+    }
+    //Select two icons
+    .select2 {
+        width: 100% !important;
+    }
+    .filter-location + .select2 .select2-selection--single::after {
+        content: url(../images/location.png);
+    }
+    .bed + .select2 .select2-selection--single::after {
+        content: url(../images/bed1.png);
+    }
+    .bath + .select2 .select2-selection--single::after {
+        content: url(../images/bath1.png);
+    }
+    .area + .select2 .select2-selection--single::after {
+        content: url(../images/area1.png);
+    }
+}
+.all-listinng-wraper {
+    .filter-top-wraper {
+        background: #f7f7f8;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        padding:10px;
+        border-radius: 8px;
+        border: 1px solid var(--color-4);
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        .short-by-wraper {
+            padding: 6px 12px;
+            background: #fff;
+            border-radius: 4px;
+            border: 1px solid var(--color-4);
+            .sort-by-select {
+                border: none;
+            }
+        }
+    }
+    .map {
+        height: 100%;
+    }
+}
+.filter-btn {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-15);
+    color: #fff;
+    border-radius: 8px;
+}
+.border-box-small{
+    border: 1px solid var(--color-4);
+    padding: 8px;
+    border-radius: 8px;
+    background: #fff;
+}
