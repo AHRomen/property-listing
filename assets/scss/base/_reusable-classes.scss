@@ -79,6 +79,7 @@
     border-radius: 8px;
     padding: 12px 13px;
     box-shadow: 0 1px 2px 0 #1018280D;
+    font-size: 14px;
 }
 input[type="checkbox"] {
     appearance: none;
@@ -106,11 +107,39 @@ input[type="checkbox"] {
         color: #fff;
     }
 }
+.custom-radio {
+    accent-color: var(--color-15);
+    // -webkit-appearance: none;
+    // border: 1px solid #000;
+    // height: 16px;
+    // width: 16px;
+    // border-radius: 50%;
+    // align-items: center;
+    // position: relative;
+    // &.checked::after {
+    //     content: "";
+    //     position: absolute;
+    //     height: 14px;
+    //     width: 14px;
+    //     border-radius: 50%;
+    //     background: #000;
+    // }
+}
 textarea {
     width: 100%;
 }
 .box-shadow {
     box-shadow: 0 3px 88px 0 #10182814;
+}
+.black-bg {
+    background: var(--color-11);
+    color: #FFFFFF !important;
+}
+.link-white a {
+    color: #FFFFFF !important;
+}
+.flex-1{
+    flex: 1;
 }
 .border-box {
     border: 1.5px solid var(--color-4);

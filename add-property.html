@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPROPERTY</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!--Plugin file-->
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <!-- Style Css File -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="white-bg">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container custom-container">      
+                <div class="logo-wraper">
+                    <a href="javascript:void(0)" class="logo">
+                        <img src="./assets/images/xproperties.png" alt="XPROPERTY">
+                    </a>
+                </div>
+                <div class="responsive-mobile-menu ms-auto">
+                    <button class="navbar-toggler bg-w" type="button" data-bs-toggle="collapse" data-bs-target="#listing-menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="javascript:void(0)" class="click-nav-right-icon">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </a>
+                </div>
+                <!-- <div class="navbar-left-content">
+                    <div class="search-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.58317 18.125C4.87484 18.125 1.0415 14.2917 1.0415 9.58334C1.0415 4.87501 4.87484 1.04167 9.58317 1.04167C14.2915 1.04167 18.1248 4.87501 18.1248 9.58334C18.1248 14.2917 14.2915 18.125 9.58317 18.125ZM9.58317 2.29167C5.55817 2.29167 2.2915 5.56667 2.2915 9.58334C2.2915 13.6 5.55817 16.875 9.58317 16.875C13.6082 16.875 16.8748 13.6 16.8748 9.58334C16.8748 5.56667 13.6082 2.29167 9.58317 2.29167Z" fill="#F76631"/>
+                            <path d="M18.3335 18.9583C18.1752 18.9583 18.0169 18.9 17.8919 18.775L16.2252 17.1083C15.9835 16.8667 15.9835 16.4667 16.2252 16.225C16.4669 15.9833 16.8669 15.9833 17.1085 16.225L18.7752 17.8917C19.0169 18.1333 19.0169 18.5333 18.7752 18.775C18.6502 18.9 18.4919 18.9583 18.3335 18.9583Z" fill="#F76631"/>
+                        </svg>                            
+                    </div>
+                    <input type="text" class="navbar-search-form" placeholder="Search properties">
+                    <a href="#/" class="cmn-small-btn fill-btn search-btn">Search</a>
+                </div> -->
+                <div class="collapse navbar-collapse" id="listing-menu">
+                    <ul class="navbar-nav m-lg-auto text-center mt-5">
+                        <li class="current-menu-item menu-item-has-children">
+                            <a href="./index.html">Home<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="current-menu-item">
+                                    <a href="javascript:void(0)">Home1</a>
+                                </li>
+                                <li class="current-menu-item">
+                                    <a href="javascript:void(0)">Home2</a>
+                                </li>
+                            </ul>
+                        </li>             
+                        <li class="current-menu-item">
+                            <a href="javascript:void(0)">About</a>
+                        </li>
+                        <li class="current-menu-item">
+                            <a href="./single-blog.html">Blogs</a>
+                        </li>
+                        <li class="current-menu-item">
+                            <a href="./get-in-touch.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-right-content">
+                    <!-- <div class="single-right-content">
+                        <div class="navbar-right-flex d-flex">
+                            <div class="navbar-right-btn-1">
+                                <a href="./login.html" class="cmn-btn transparent-btn">Login</a>
+                            </div>
+                            <div class="navbar-right-btn-2">
+                                <a href="javascript:(0)" class="cmn-btn fill-btn"><span class="me-2"><i class="fa-solid fa-plus"></i></span>Add Property</a>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="after-login-content">
+                        <div class="notification">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.0199 20.53C9.68987 20.53 7.35987 20.16 5.14987 19.42C4.30987 19.13 3.66987 18.54 3.38987 17.77C3.09987 17 3.19987 16.15 3.65987 15.39L4.80987 13.48C5.04987 13.08 5.26987 12.28 5.26987 11.81V8.92C5.26987 5.2 8.29987 2.17 12.0199 2.17C15.7399 2.17 18.7699 5.2 18.7699 8.92V11.81C18.7699 12.27 18.9899 13.08 19.2299 13.49L20.3699 15.39C20.7999 16.11 20.8799 16.98 20.5899 17.77C20.2999 18.56 19.6699 19.16 18.8799 19.42C16.6799 20.16 14.3499 20.53 12.0199 20.53ZM12.0199 3.67C9.12987 3.67 6.76987 6.02 6.76987 8.92V11.81C6.76987 12.54 6.46987 13.62 6.09987 14.25L4.94987 16.16C4.72987 16.53 4.66987 16.92 4.79987 17.25C4.91987 17.59 5.21987 17.85 5.62987 17.99C9.80987 19.39 14.2399 19.39 18.4199 17.99C18.7799 17.87 19.0599 17.6 19.1899 17.24C19.3199 16.88 19.2899 16.49 19.0899 16.16L17.9399 14.25C17.5599 13.6 17.2699 12.53 17.2699 11.8V8.92C17.2699 6.02 14.9199 3.67 12.0199 3.67Z" fill="#344054"/>
+                                <path d="M13.8796 3.93999C13.8096 3.93999 13.7396 3.92999 13.6696 3.90999C13.3796 3.82999 13.0996 3.76999 12.8296 3.72999C11.9796 3.61999 11.1596 3.67999 10.3896 3.90999C10.1096 3.99999 9.80963 3.90999 9.61963 3.69999C9.42963 3.48999 9.36963 3.18999 9.47963 2.91999C9.88963 1.86999 10.8896 1.17999 12.0296 1.17999C13.1696 1.17999 14.1696 1.85999 14.5796 2.91999C14.6796 3.18999 14.6296 3.48999 14.4396 3.69999C14.2896 3.85999 14.0796 3.93999 13.8796 3.93999Z" fill="#344054"/>
+                                <path d="M12.0195 22.81C11.0295 22.81 10.0695 22.41 9.36953 21.71C8.66953 21.01 8.26953 20.05 8.26953 19.06H9.76953C9.76953 19.65 10.0095 20.23 10.4295 20.65C10.8495 21.07 11.4295 21.31 12.0195 21.31C13.2595 21.31 14.2695 20.3 14.2695 19.06H15.7695C15.7695 21.13 14.0895 22.81 12.0195 22.81Z" fill="#344054"/>
+                            </svg>
+                        </div>
+                        <div class="fevourite">
+                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 19.65C10.69 19.65 10.39 19.61 10.14 19.52C6.32 18.21 0.25 13.56 0.25 6.69001C0.25 3.19001 3.08 0.350006 6.56 0.350006C8.25 0.350006 9.83 1.01001 11 2.19001C12.17 1.01001 13.75 0.350006 15.44 0.350006C18.92 0.350006 21.75 3.20001 21.75 6.69001C21.75 13.57 15.68 18.21 11.86 19.52C11.61 19.61 11.31 19.65 11 19.65ZM6.56 1.85001C3.91 1.85001 1.75 4.02001 1.75 6.69001C1.75 13.52 8.32 17.32 10.63 18.11C10.81 18.17 11.2 18.17 11.38 18.11C13.68 17.32 20.26 13.53 20.26 6.69001C20.26 4.02001 18.1 1.85001 15.45 1.85001C13.93 1.85001 12.52 2.56001 11.61 3.79001C11.33 4.17001 10.69 4.17001 10.41 3.79001C9.48 2.55001 8.08 1.85001 6.56 1.85001Z" fill="#344054"/>
+                            </svg>                                
+                        </div>
+                        <div class="profile-part">
+                            <div class="profile-img">
+                                <img src="./assets/images/profile.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <div class="item"><a href="dashbord.html">Dashbord</a></div>
+                                <div class="item"><a href="#/">Setting</a></div>
+                                <div class="logout"><a href="#/">Log Out</a></div>
+                            </div>
+                        </div>
+                        <div class="country-flag">
+                            <img src="./assets/images/flag.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End of Header -->
+    <section class="add-property pt-100 pb-100">
+        <div class="custom-container">
+            <form action="#" method="post">
+                <div class="row g-4">
+                    <div class="col-lg-8">
+                        <div class="property-widget-wraper d-flex flex-column gap-4">
+                            <div class="rent-sell border-box d-flex gap-4">
+                                <div class="rent d-flex align-items-center gap-2">
+                                    <input type="radio" class="custom-radio" name="rent" id="rent" value="true">
+                                    <label for="rent">For Rent</label>
+                                </div>
+                                <div class="sell d-flex align-items-center gap-2">
+                                    <input type="radio" class="custom-radio" name="rent" id="sell" value="true">
+                                    <label for="sell">For Sell</label>
+                                </div>
+                            </div>
+                            <div class="property-name border-box">
+                                <label for="property-name" class="custom-label">Item Name <span class="text-danger">*</span></label>
+                                <input type="text" name="property" id="property-name" class="custom-input w-100" placeholder="Property Name">
+                            </div>
+                            <div class="about-item border-box">
+                                <h3 class="about-item-head">About Item</h3>
+                                <div class="category-wraper d-flex gap-3 flex-wrap">
+                                    <div class="main-category-wraper flex-1">
+                                        <label for="main-category" class="custom-label w-100">Main Category</label>
+                                        <select name="main-category" id="main-category" class="custom-input">
+                                            <option value=""></option>
+                                            <option value="Main Category 1">Main Category 1</option>
+                                            <option value="Main Category 1">Main Category 2</option>
+                                            <option value="Main Category 1">Main Category 3</option>
+                                            <option value="Main Category 1">Main Category 4</option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <div class="sub-category-wraper flex-1">
+                                        <label for="main-category" class="custom-label w-100">Main Category</label>
+                                        <select name="main-category" id="sub-category" class="custom-input">
+                                            <option value=""></option>
+                                            <option value="Main Category 1">Main Category 1</option>
+                                            <option value="Main Category 1">Main Category 2</option>
+                                            <option value="Main Category 1">Main Category 3</option>
+                                            <option value="Main Category 1">Main Category 4</option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <div class="child-category-wraper flex-1">
+                                        <label for="main-category" class="custom-label w-100">Main Category</label>
+                                        <select name="main-category" id="child-category" class="custom-input">
+                                            <option value=""></option>
+                                            <option value="Main Category 1">Main Category 1</option>
+                                            <option value="Main Category 1">Main Category 2</option>
+                                            <option value="Main Category 1">Main Category 3</option>
+                                            <option value="Main Category 1">Main Category 4</option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="general-information border-box">
+                                <h3 class="about-item-head">Genaral Information</h3>
+                                <div class="d-flex gap-3">
+                                    <div class="bedroom flex-1">
+                                        <lebel class="custom-label d-block">No. of Bedrooms</lebel>
+                                        <select name="" id="bedroom" class="custom-input bedroom-icon">
+                                            <option value=""></option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+                                    <div class="bathroom flex-1">
+                                        <lebel class="custom-label d-block">No. of Bathroom</lebel>
+                                        <select name="" id="bathroom" class="custom-input bathroom-icon">
+                                            <option value=""></option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+                                    <div class="kitchen flex-1">
+                                        <lebel class="custom-label d-block">No. of Kitchens</lebel>
+                                        <select name="" id="kitchen" class="custom-input kitchen-icon">
+                                            <option value=""></option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="total-area mt-3">
+                                    <label for="" class="custom-label mb-2">Total Area</label>
+                                    <div class="area-input-waper d-flex gap-3">
+                                        <input type="number" class="custom-input flex-1" placeholder="Area">
+                                        <select name="area" id="area-quantity" class="area-quantity custom-input">
+                                            <option value=""></option>
+                                            <option value="sqft">Sqft</option>
+                                            <option value="meter">Meter</option>
+                                            <option value="kilometer">Sqft</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="provided-amenities border-box">
+                                <h3 class="about-item-head">Choose Amenities You’ll provide</h3>
+                                <div class="row g-3">
+                                    <div class="col-sm-4">
+                                        <div class="single-amenities d-flex justify-content-between align-items-center gap-3 d-block">
+                                            <span class="icon">
+                                                <img src="./assets/images/securities.png" alt="">
+                                                <span>Security</span>
+                                            </span>
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="single-amenities d-flex justify-content-between align-items-center gap-3 d-block">
+                                            <span class="icon">
+                                                <img src="./assets/images/securities.png" alt="">
+                                                <span>Security</span>
+                                            </span>
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="single-amenities d-flex justify-content-between align-items-center gap-3 d-block">
+                                            <span class="icon">
+                                                <img src="./assets/images/securities.png" alt="">
+                                                <span>Security</span>
+                                            </span>
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="single-amenities d-flex justify-content-between align-items-center gap-3 d-block">
+                                            <span class="icon">
+                                                <img src="./assets/images/securities.png" alt="">
+                                                <span>Security</span>
+                                            </span>
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="single-amenities d-flex justify-content-between align-items-center gap-3 d-block">
+                                            <span class="icon">
+                                                <img src="./assets/images/securities.png" alt="">
+                                                <span>Security</span>
+                                            </span>
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="single-amenities d-flex justify-content-between align-items-center gap-3 d-block">
+                                            <span class="icon">
+                                                <img src="./assets/images/securities.png" alt="">
+                                                <span>Security</span>
+                                            </span>
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="price border-box">
+                            <label for="price" class="custom-label">Price</label>
+                            <input type="number" name="" id="price" class="custom-input w-100 mb-4">
+                            <input type="checkbox" name="" id="nagotiable" class="me-2">
+                            <label for="nagotiable" class="custom-label">Negotiable</label>
+                            <div class="expected-rental-price mt-3">
+                                <label for="rental" class="custom-label">Expected Rental Price</label>
+                                <input type="number" name="" id="rental" class="custom-input w-100">
+                            </div>
+                        </div>
+                        <div class="featured-image mt-4 text-center">
+                            <div class="content-wraper">
+                              <div class="img-icon">
+                                <img src="./assets/images/listing_single_image.png" alt="">
+                              </div>  
+                              <button class="click-to-upload" type="button">Click to Browse & Upload Featured Image</button>
+                              <div class="img-fotmat">Image Format : jpg,jpeg,png,gif,webp</div>
+                              <div class="recomended-size">Recommended size : 810x450</div> 
+                            </div>
+                        </div>
+                        <div class="featured-image gallery-image mt-4 text-center">
+                            <div class="content-wraper">
+                              <div class="img-icon">
+                                <img src="./assets/images/listing_single_image.png" alt="">
+                              </div>  
+                              <button class="click-to-upload" type="button">Click to Browse & Upload Gallery Image</button>
+                              <div class="img-fotmat">Image Format : jpg,jpeg,png,gif,webp</div>
+                              <div class="recomended-size">Recommended size : 810x450</div> 
+                            </div>
+                        </div>
+                        <div class="btn-wraper mt-4">
+                            <a href="./add-property-two.html" class="cmn-small-btn w-100 fill-btn">Continue</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--Footer Part-->
+    <footer class="footer-area pt-50 footer-second-style">
+        <div class="custom-container">
+            <div class="footer-area-wraper">
+                <div class="row footer-area-top pb-50">
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-widget widget">
+                           <div class="footer-content-logo">
+                                <a href="javascript:void(0)"><img src="./assets/images/xproperties.png" alt="xproperties"></a>
+                           </div> 
+                           <div class="footer-widget-inner mt-5">
+                                <ul class="ps-2">
+                                    <li class="mb-3"><i class="fa-solid fa-phone"></i><span class="ms-3">(629) 555-0129</span></li>
+                                    <li class="mb-3"><i class="fa-solid fa-envelope"></i><span class="ms-3">bill.sanders@example.com</span></li>
+                                    <li><i class="fa-solid fa-location-dot"></i><span class="ms-3">8502 Preston Rd. Inglewood, Maine</span></li>
+                                </ul>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-3 col-4">
+                        <div class="cities text-links footer-widget widget">
+                            <h4 class="fourth-heading footer-widget-title">Cities</h4>
+                                <ul>
+                                    <li><a href="javascript:void(0)">New York</a></li>
+                                    <li><a href="javascript:void(0)">San Fransisco</a></li>
+                                    <li><a href="javascript:void(0)">Florida</a></li>
+                                    <li><a href="javascript:void(0)">Washington</a></li>
+                                    <li><a href="javascript:void(0)">Alabama</a></li>
+                                    <li><a href="javascript:void(0)">North Carolina</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-3 col-4">
+                        <div class="categories text-links footer-widget widget">
+                            <h4 class="fourth-heading footer-widget-title">Categories</h4>
+                            <ul>
+                                <li><a href="javascript:void(0)">House</a></li>
+                                <li><a href="javascript:void(0)">Apartments</a></li>
+                                <li><a href="javascript:void(0)">Hotels</a></li>
+                                <li><a href="javascript:void(0)">Office</a></li>
+                                <li><a href="javascript:void(0)">Store</a></li>
+                                <li><a href="javascript:void(0)">Warehouse</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-4">
+                        <div class="about text-links footer-widget widget">
+                            <h4 class="fourth-heading footer-widget-title">About</h4>
+                            <ul>
+                                <li><a href="javascript:void(0)">About us</a></li>
+                                <li><a href="javascript:void(0)">About us</a></li>
+                                <li><a href="javascript:void(0)">Faq</a></li>
+                                <li><a href="javascript:void(0)">Contact</a></li>
+                                <li><a href="javascript:void(0)">Terms & Conditions</a></li>
+                                <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-8 col-12">
+                        <div class="subscribe footer-widget widget mt-3">
+                            <h4 class="fourth-heading footer-widget-title">Subscribe to our newsletter</h4>
+                            <form action="#" method="get" class="footer-widget-form">
+                                <div class="footer-input mb-4">
+                                    <input type="email" name="email" id="email" placeholder="Email">
+                                </div>
+                                <button footer-widget widget class="cmn-btn submit-btn ">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="devider"></div>
+                <div class="copyright-area pt-50 pb-50 d-flex justify-content-between">
+                    <ul class="social-link d-flex">
+                        <li class="me-3"><a href="javascript:void(0)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_265_18612)">
+                            <path d="M14 9.3V12.2H16.6C16.8 12.2 16.9 12.4 16.9 12.6L16.5 14.5C16.5 14.6 16.3 14.7 16.2 14.7H14V22H11V14.8H9.3C9.1 14.8 9 14.7 9 14.5V12.6C9 12.4 9.1 12.3 9.3 12.3H11V9C11 7.3 12.3 6 14 6H16.7C16.9 6 17 6.1 17 6.3V8.7C17 8.9 16.9 9 16.7 9H14.3C14.1 9 14 9.1 14 9.3Z" stroke="#667085" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H15C20 2 22 4 22 9V15C22 20 20 22 15 22Z" stroke="#667085" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_265_18612">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg></a></li>
+                        <li class="me-3"><a href="javascript:void(0)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_265_18613)">
+                            <path d="M17 20H7C4 20 2 18 2 15V9C2 6 4 4 7 4H17C20 4 22 6 22 9V15C22 18 20 20 17 20Z" stroke="#667085" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.4 9.49981L13.9 10.9998C14.8 11.5998 14.8 12.4998 13.9 13.0998L11.4 14.5998C10.4 15.1998 9.59998 14.6998 9.59998 13.5998V10.5998C9.59998 9.29981 10.4 8.89981 11.4 9.49981Z" stroke="#667085" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_265_18613">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg></a></li>
+                        <li><a href="javascript:void(0)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_265_18614)">
+                            <path d="M6.9 20.6C8.4 21.5 10.2 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 13.8 2.5 15.5 3.3 17L2.44044 20.306C2.24572 21.0549 2.93892 21.7317 3.68299 21.5191L6.9 20.6Z" stroke="#667085" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.5 14.8485C16.5 15.0105 16.4639 15.177 16.3873 15.339C16.3107 15.501 16.2116 15.654 16.0809 15.798C15.86 16.041 15.6167 16.2165 15.3418 16.329C15.0714 16.4415 14.7784 16.5 14.4629 16.5C14.0033 16.5 13.512 16.392 12.9937 16.1715C12.4755 15.951 11.9572 15.654 11.4434 15.2805C10.9251 14.9025 10.4339 14.484 9.9652 14.0205C9.501 13.5525 9.08187 13.062 8.70781 12.549C8.33826 12.036 8.04081 11.523 7.82449 11.0145C7.60816 10.5015 7.5 10.011 7.5 9.543C7.5 9.237 7.55408 8.9445 7.66224 8.6745C7.77041 8.4 7.94166 8.148 8.18052 7.923C8.46895 7.6395 8.78443 7.5 9.11793 7.5C9.24412 7.5 9.37031 7.527 9.48297 7.581C9.60015 7.635 9.70381 7.716 9.78493 7.833L10.8305 9.3045C10.9116 9.417 10.9702 9.5205 11.0108 9.6195C11.0513 9.714 11.0739 9.8085 11.0739 9.894C11.0739 10.002 11.0423 10.11 10.9792 10.2135C10.9206 10.317 10.835 10.425 10.7268 10.533L10.3843 10.8885C10.3348 10.938 10.3122 10.9965 10.3122 11.0685C10.3122 11.1045 10.3167 11.136 10.3257 11.172C10.3393 11.208 10.3528 11.235 10.3618 11.262C10.4429 11.4105 10.5826 11.604 10.7809 11.838C10.9837 12.072 11.2 12.3105 11.4344 12.549C11.6778 12.7875 11.9121 13.008 12.151 13.2105C12.3853 13.4085 12.5791 13.5435 12.7323 13.6245C12.7549 13.6335 12.7819 13.647 12.8135 13.6605C12.8495 13.674 12.8856 13.6785 12.9261 13.6785C13.0028 13.6785 13.0613 13.6515 13.1109 13.602L13.4534 13.2645C13.5661 13.152 13.6743 13.0665 13.7779 13.0125C13.8816 12.9495 13.9852 12.918 14.0979 12.918C14.1835 12.918 14.2737 12.936 14.3728 12.9765C14.472 13.017 14.5756 13.0755 14.6883 13.152L16.18 14.2095C16.2972 14.2905 16.3783 14.385 16.4279 14.4975C16.473 14.61 16.5 14.7225 16.5 14.8485Z" stroke="#667085" stroke-miterlimit="10"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_265_18614">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </a></li>
+                    </ul>
+                    <div class="text">&copy 2000-2024, <a href="javascript:void(0)">Xproperty</a> All Right Reserved</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!-- Plugin JS -->
+     <script src="./assets/js/plugin.js"></script>
+     <!--Main JS-->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

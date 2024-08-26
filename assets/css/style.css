@@ -69,6 +69,7 @@
   font-family: var(--heading-font-1);
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
+  text-align: center;
 }
 
 .delete-btn {
@@ -263,7 +264,7 @@
   --color-12:#FF3B30;
   --color-13:#FFCC00;
   --color-14:#05BE70;
-  --color-15:#F76631;
+  --color-15:#f76631;
   --color-16:#4D77FF;
   --color-17:#141457;
   --color-18:#CEF6F7;
@@ -450,6 +451,7 @@ p {
   padding: 12px 13px;
   -webkit-box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.0509803922);
           box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.0509803922);
+  font-size: 14px;
 }
 
 input[type=checkbox] {
@@ -483,6 +485,10 @@ input[type=checkbox]:checked {
   color: #fff;
 }
 
+.custom-radio {
+  accent-color: var(--color-15);
+}
+
 textarea {
   width: 100%;
 }
@@ -490,6 +496,21 @@ textarea {
 .box-shadow {
   -webkit-box-shadow: 0 3px 88px 0 rgba(16, 24, 40, 0.0784313725);
           box-shadow: 0 3px 88px 0 rgba(16, 24, 40, 0.0784313725);
+}
+
+.black-bg {
+  background: var(--color-11);
+  color: #FFFFFF !important;
+}
+
+.link-white a {
+  color: #FFFFFF !important;
+}
+
+.flex-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .border-box {
@@ -1025,6 +1046,7 @@ textarea {
 }
 .select2 .select2-selection--single .select2-selection__rendered {
   padding-left: 25px;
+  font-size: 14px;
 }
 .select2 .select2-selection--single .select2-selection__arrow {
   height: auto;
@@ -2312,6 +2334,92 @@ textarea {
   padding: 8px;
   border-radius: 8px;
   background: #fff;
+}
+
+/*Add property Css*/
+.add-property {
+  font-size: 14px;
+  font-family: var(--heading-font-1);
+}
+.add-property .about-item-head {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--heading-font-1);
+  margin-bottom: 30px;
+}
+.add-property .about-item .select2-selection--single .select2-selection__rendered {
+  padding-left: 0;
+}
+.add-property .area-input-waper .select2 {
+  width: 50% !important;
+}
+.add-property .select2 {
+  width: 100% !important;
+}
+.add-property .bedroom-icon + .select2 .select2-selection--single::after {
+  content: url(../images/bed.png);
+}
+.add-property .bathroom-icon + .select2 .select2-selection--single::after {
+  content: url(../images/bath.png);
+}
+.add-property .kitchen-icon + .select2 .select2-selection--single::after {
+  content: url(../images/ktchen.png);
+}
+.add-property .area-quantity + .select2 .select2-selection--single::after {
+  content: url(../images/area.png);
+}
+.add-property .featured-image {
+  font-size: 14px;
+  width: 100%;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border: 1px dashed var(--color-15);
+  border-radius: 8px;
+  background-color: rgba(250, 125, 79, 0.1019607843);
+}
+.add-property .featured-image .content-wraper {
+  max-width: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+.add-property .featured-image .content-wraper .click-to-upload {
+  border: none;
+  background: transparent;
+  color: var(--color-15);
+}
+.add-property .address-wraper .map {
+  height: 500px;
+}
+.add-property .address-wraper .map iframe {
+  height: 100%;
+}
+
+.single-amenities {
+  border: 1px solid var(--color-4);
+  border-radius: 8px;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.single-amenities.selected {
+  border-color: var(--color-15);
+  -webkit-box-shadow: 0 2px 12px 0 rgba(247, 102, 49, 0.0784313725);
+          box-shadow: 0 2px 12px 0 rgba(247, 102, 49, 0.0784313725);
 }
 
 .user-dashboard-content-wraper {

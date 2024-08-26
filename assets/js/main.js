@@ -15,32 +15,58 @@
             $(".profile-item").toggleClass("show");
         });
        //Select2 dropedown
-       $('.location-0').select2({
-        placeholder: "Location"
-      });
-      $('.property-0').select2({
-        placeholder: "Property"
-      });
-      $('.price-range-0').select2({
-        placeholder: "Price Range"
-      });
-      $('.filter-widget.filter-location').select2({
-        
-      });
-      $('.filter-widget.bed').select2({
-        
-      });
-      $('.filter-widget.bath').select2({
-        
-      });
-      $('.filter-widget.area').select2({
-        
-      });
-      $('.filter-widget.property-categories').select2({
-        
-      });
-    });
+        $('.location-0').select2({
+            placeholder: "Location",
+        });
+        $('.property-0').select2({
+            placeholder: "Property"
+        });
+        $('.price-range-0').select2({
+            placeholder: "Price Range",
+        });
+        $('.filter-widget.filter-location').select2({
+            
+        });
+        $('.filter-widget.bed').select2({
+            
+        });
+        $('.filter-widget.bath').select2({
+           
+        });
+        $('.filter-widget.area').select2({    
+            
+        });
+        $('.filter-widget.property-categories').select2({
+            
+        });
+        $('.category-wraper #main-category').select2({
+            placeholder: "Main Cetagory",
+        });
+        $('.category-wraper #sub-category').select2({
+            placeholder: "Sub Category",
+        });
+        $('.category-wraper #child-category').select2({
+            placeholder: "Child Category",
+        });
+        $('.general-information #bedroom').select2({
+            placeholder: "4",
+        });
+        $('.general-information #bathroom').select2({
+            placeholder: "4",
+        });
+        $('.general-information #kitchen').select2({
+            placeholder: "4",
+        });
+        $('.area-input-waper #area-quantity').select2({
+            placeholder: "Sqft",
+        });
+        //chose amenities
+        $(document).on('click', '.single-amenities input', function(){
+            let singleAmenities = $(this).closest(".single-amenities")
+            singleAmenities.toggleClass("selected");
+        });
 
+    });
      /*-----------------------------------
             global slick slicer control
         -----------------------------------*/

@@ -1,0 +1,78 @@
+/*Add property Css*/
+.add-property {
+    font-size: 14px;
+    font-family: var(--heading-font-1);
+    .about-item-head {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: var(--heading-font-1);
+        margin-bottom: 30px;
+    }
+    .about-item {
+        .select2-selection--single .select2-selection__rendered {
+            padding-left: 0;
+        }
+    }
+    .area-input-waper {
+        .select2 {
+            width: 50% !important;
+        }
+    }
+    .select2 {
+        width: 100% !important;
+    }
+    .bedroom-icon + .select2 .select2-selection--single::after {
+        content: url(../images/bed.png);
+    }
+    .bathroom-icon + .select2 .select2-selection--single::after {
+        content: url(../images/bath.png);
+    }
+    .kitchen-icon + .select2 .select2-selection--single::after {
+        content: url(../images/ktchen.png);
+    }
+    .area-quantity + .select2 .select2-selection--single::after {
+        content: url(../images/area.png);
+    }
+    .featured-image {
+        font-size: 14px;
+        width: 100%;
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border: 1px dashed var(--color-15);
+        border-radius: 8px;
+        background-color: #fa7d4f1a;
+        .content-wraper {
+            max-width: 290px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            .click-to-upload {
+                border: none;
+                background: transparent;
+                color: var(--color-15);
+            }
+        }
+    }
+    .address-wraper {
+        .map {
+            height: 500px;
+            iframe {
+                height: 100%;
+            }
+        }
+    }
+}
+.single-amenities {
+    border: 1px solid var(--color-4);
+    border-radius: 8px;
+    padding: 10px;
+    transition: all .5s ease-in-out;
+    &.selected {
+        border-color: var(--color-15);
+        box-shadow: 0 2px 12px 0 #F7663114;
+    }
+
+}
