@@ -32,6 +32,9 @@
             width: 4px;
             border-radius: 12px 0 0 12px;
         }
+        svg path{
+            fill: #98A2B3;
+        }
         &.active{
             color: var(--color-15);
             background: #FFF7F5;
@@ -63,56 +66,73 @@
     justify-content: space-between;
     gap: 30px;
     height: 100%;
+    font-family: var(--heading-font-1);
 }
-.my-single-properties-wraper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-/*Card for my porperties*/
-.my-single-properties {
-    display: flex;
-    width: 100%;
-    .img {
-        max-width: 256px;
+// User Profile
+.userProfile {
+    .top-part {
+        display: flex;
+        gap: 20px;
+        align-items: center;
         position: relative;
-        .ribbon-wraper {
+        .img{
+            height: 90px;
+            width: 90px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .member {
+            font-size: 14px;
+            .name {
+                font-weight:600;
+                color: var(--color-11);
+                font-size: 20px;
+                margin-bottom: 6px;
+            }
+        }
+        .verified-icon {
             position: absolute;
-            top: 20px;
-            left: -8px;
+            right: 0;
+            top: 25%;
         }
     }
-    .img img{
-        width: 100%;
-        height: 100%;
-        border-radius: 12px 0 0 12px;
+    .devider {
+        margin:30px 0 20px 0;
     }
-    .body-text {
-        flex: 1;
-        padding: 30px;
-        border: 1px solid #EAECF0;
-        border-radius: 0 12px 12px 0;
-        .heading {
-            color: var(--color-11);
-            font-size: 24px;
-            line-height: 1.2;
-        }
-        .address {
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-        .price {
-            color: var(--color-15);
-        }
-        .devider {
-            margin: 20px 0;
-        }
-        .footer {
+    .bottom-part {
+        .contact {
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 10px;
+            gap: 15px;
+            margin-bottom: 30px;
+            .phone, .address {
+                padding-right: 15px;
+                border-right: 1px solid var(--color-4);
+            }
+        }
+    }
+}
+.all-listing-state {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(180px, 1fr));
+    gap: 20px;
+    .list-state{
+        padding: 16px 20px;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        .num {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--color-11);
+        }
+        .text {
+            color: #64748B;
+            font-size: 14px;
+        }
+        &.posted {
+            background: #FFF7ED;
+            border-color: #FED7AA;
         }
     }
 }

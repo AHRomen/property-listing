@@ -65,6 +65,13 @@
             let singleAmenities = $(this).closest(".single-amenities")
             singleAmenities.toggleClass("selected");
         });
+        $(document).on('click', '.three-dots', function(){
+            let option = $(this).siblings(".option");
+            option.toggleClass("show");
+        });
+        $(document).on('click', '.option .publish', function(){
+            $(this).toggleClass("published");
+        });
 
     });
      /*-----------------------------------

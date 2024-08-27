@@ -120,6 +120,9 @@
     border-radius: 6px;
     text-transform: uppercase;
 }
+.badge-small {
+    font-size: 11px;
+}
 .badge-purple {
     color: #8A39E1;
     background: rgba(138, 57, 225, 0.12 );
@@ -127,6 +130,10 @@
 .badge-red {
     color: var(--color-15);
     background: rgba(247, 102, 49, 0.12);
+}
+.badge-green {
+    color: #16A34A;
+    background: #DCFCE7;
 }
 //Toggle Btn
 .toggole-btn {
