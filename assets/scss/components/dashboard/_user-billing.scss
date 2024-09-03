@@ -40,3 +40,23 @@
         }
     }
 }
+.useer-billing-wraper {
+    .search-input {
+        position: relative;
+        input {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid var(--color-4);
+            padding-left: 30px;
+        }
+        &::after {
+            content: "\f002";
+            font: var(--fa-font-regular);
+            font-weight: 900;
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+    }
+}

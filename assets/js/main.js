@@ -60,6 +60,15 @@
         $('.area-input-waper #area-quantity').select2({
             placeholder: "Sqft",
         });
+        $('.country-select-wraper #country').select2({
+            placeholder: "Bangladesh",
+        });
+        $('.state-city-wraper #state').select2({
+            placeholder: "Dhaka",
+        });
+        $('.state-city-wraper #city').select2({
+            placeholder: "Gazipur",
+        });
         //chose amenities
         $(document).on('click', '.single-amenities input', function(){
             let singleAmenities = $(this).closest(".single-amenities")
