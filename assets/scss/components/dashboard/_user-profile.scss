@@ -1,0 +1,22 @@
+// Profile Settings
+.user-profile-wraper {
+    .select2 {
+        width: 100% !important;
+        .select2-selection--single {
+            .select2-selection__rendered {
+                padding: 0;
+            }
+        }
+    }
+    .img-upload-part {
+        .img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

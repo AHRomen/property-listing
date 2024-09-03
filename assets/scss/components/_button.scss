@@ -33,15 +33,32 @@
 .transparent-btn {
     border-color: var(--color-17);
     color: var(--color-17);
+    &:hover {
+        background: var(--color-17);
+        color: #fff;
+    }
 }
 .transparent-btn-one {
     border-color: var(--color-4);
     color: var(--color-7);
     box-shadow: 0 1px 2px 0 #1018280D;
+    &:hover {
+        background: var(--color-4);
+        color: #fff;
+    }
 }
 .fill-btn {
     background-color: var(--color-15);
     color: var(--color-1);
+    &:hover {
+        background: #fff;
+        color: var(--color-15);
+        border-color: var(--color-15);
+    }
+}
+.simple-btn {
+    color: var(--color-15);
+    letter-spacing: -1px;
 }
 .slider-arrow{
     font-size: 18px;

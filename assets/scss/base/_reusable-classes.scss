@@ -246,3 +246,35 @@ textarea {
 .noUi-handle:after, .noUi-handle:before {
     display: none;
 }
+//Table design
+.custom-table {
+    width: 100%;
+    overflow: auto;
+    font-size: 14px;
+    .table {
+        vertical-align: middle;
+    }
+    .table-head-light {
+        background: #F1F5F9;
+    }
+    tr{
+        th {
+            padding: 8px;
+            border-bottom: 0;
+        }
+        td{
+            border-bottom: 1px solid var(--color-4);
+            padding: 8px;
+            line-height: 1.2;
+        }
+        td:first-child {
+            min-width: 76px;
+        }
+        td:not(:first-child){
+            min-width: 200px;
+        }
+    }
+    .badge {
+        font-size: 12px;
+    }
+}
