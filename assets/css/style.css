@@ -2054,12 +2054,12 @@ textarea {
 .property-details .property-head .published {
   color: var(--color-15);
 }
-.property-details .property-imges .display-image-wraper .main-img {
+.property-details .property-imges .display-image-wraper .single-main-image a {
   height: 410px;
-  max-width: 100%;
+  width: 100%;
   border-radius: 12px;
 }
-.property-details .property-imges .display-image-wraper .main-img img {
+.property-details .property-imges .display-image-wraper .single-main-image a img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -2067,25 +2067,25 @@ textarea {
   border-radius: 12px;
 }
 .property-details .property-imges .thumb-image-wraper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-bottom: 30px;
-  gap: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
-.property-details .property-imges .thumb-image-wraper .sub-img {
-  height: 82px;
-  width: 82px;
+.property-details .property-imges .thumb-image-wraper .slick-list .slick-slide {
+  margin: auto 10px;
+}
+.property-details .property-imges .thumb-image-wraper .slick-track {
+  margin-left: 0;
+}
+.property-details .property-imges .thumb-image-wraper .single-thumb {
+  height: 86px;
+  width: 84px;
   border-radius: 8px;
   padding: 2px;
   border: 1px solid var(--color-15);
 }
-.property-details .property-imges .thumb-image-wraper .sub-img img {
-  height: 100%;
-  width: 100%;
+.property-details .property-imges .thumb-image-wraper .single-thumb img {
   border-radius: 8px;
+  height: 80px;
+  width: 80px;
 }
 .property-details .property-description-wraper {
   display: -webkit-box;
@@ -2232,6 +2232,11 @@ textarea {
   font-family: var(--heading-font-1);
 }
 
+.all-listing .map {
+  height: 400px;
+  margin-bottom: 24px;
+}
+
 .black-shadow {
   position: fixed;
   inset: 0;
@@ -2244,14 +2249,14 @@ textarea {
 }
 
 .filter-widget-wraper {
+  position: static;
   top: 0;
   left: -100%;
-  height: 100vh;
+  height: 100%;
   overflow-y: auto;
   background: #F9FAFB;
   border: 1px solid var(--color-4);
   z-index: 1000;
-  width: 380px;
   font-family: var(--heading-font-1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -2263,7 +2268,7 @@ textarea {
   position: sticky;
   top: 0;
   background: #ffffff;
-  padding: 30px;
+  padding: 10px 20px;
   border-bottom: 1px solid var(--color-4);
   z-index: 1000;
 }

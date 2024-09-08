@@ -1,4 +1,10 @@
 //All Listing
+.all-listing {
+    .map {
+        height: 400px;
+        margin-bottom: 24px;
+    }
+}
 .black-shadow {
     position: fixed;
     inset: 0;
@@ -10,14 +16,14 @@
     }
 }
 .filter-widget-wraper {
+    position: static;
     top: 0;
     left: -100%;
-    height: 100vh;
+    height: 100%;
     overflow-y: auto;
     background:#F9FAFB;
     border: 1px solid var(--color-4);
     z-index: 1000;
-    width: 380px;
     font-family: var(--heading-font-1);
     transition: all .5s ease;
     &.show {
@@ -27,7 +33,7 @@
         position: sticky;
         top: 0;
         background: #ffffff;
-        padding: 30px;
+        padding: 10px 20px;
         border-bottom: 1px solid var(--color-4);
         z-index: 1000;
         .name {

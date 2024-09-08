@@ -91,6 +91,13 @@
     .trust .achivement .img {
         padding: 12px;
     }
+    /*All listing Part*/
+    .all-listing {
+        .filter-widget-wraper {
+            position: fixed;
+            max-width: 280px;
+        }
+    }
     /* Dashboard Css */
     /* .my-single-properties {
         flex-direction: column;
